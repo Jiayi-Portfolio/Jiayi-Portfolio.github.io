@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)file:///C:/Aalto/S2/Web%20Development/itwd_demo_1/index.html -->
 <html lang="en">
 
 <head>
@@ -12,156 +11,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="home.js" defer></script>
     <script type="text/javascript" src="toTop.js" defer></script>
-
-    <title>Jiayi Li's Portfolio-Index</title>
+    <script type="text/javascript" src="changeImage.js" defer></script>
+    
+    <title>Jiayi's Portfolio</title>
 </head>
 
 <body>
     <nav>
-        <a href="home.html">
-            <h3>JiayiLi</h3>
-        </a>
         <a href="index.html">
-            <h3 id="focusing">Index</h3>
+            <h3 id="focusing">JiayiLi</h3>
+        </a>
+        <a href="catalogs.html">
+            <h3>Index</h3>
         </a>
         <a href="about.html">
             <h3>About</h3>
         </a>
     </nav>
 
+    <section id="bouncing">
+        <div id="bouncingContainer">
+            <a href="project_2.html" id="randomImage"></a>
+        </div>
+    </section>
+
     <div class="arrows">
+
         <button id="arrowToTop">
             <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
                 <polygon points="20,5 5,35 35,35" />
             </svg>
         </button>
-        <div id="arrowDown"></div>
+        
+        <button id="arrowDown">
+            <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="20,35 5,5 35,5" />
+            </svg>
+        </button>
     </div>
 
+    <section class="homepage">
+            <h1>JIAYI LI</h1>
+            <h3 style="color: var(--txt1);">
+                New Media Artist<br />
+                Technical Artist<br />
+                Based in Helsinki, Finland<br /> </h3>
+            <a href="about.html">
+                <h3 class="zoom">More about me</h3>
+            </a>
+            
+    </section>
+    <section class="header">
+        <h2>
+            Selected Projects
+        </h2>
+    </section>
     <section>
-        <div class="header">
-            <h3>
-                2024
-            </h3>
-            </div>
-        <article class="projects">
-            <a href="home.html" class="projectCover">
-                <div class="image-container"><img src="images/web_cover.png" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Jiayi's Portfolio Website</p>
-                    <p>Web Design</p>
-                </div>
-            </a>
-            <a href="https://lijiayii.itch.io/cat-impact" class="projectCover">
-                <div class="image-container"><img src="images/cat_impact_cover.png" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Cat Impact</p>
-                    <p>Visual Novel</p>
-                </div>
-            </a>
-        </article>
-        <div class="header">
-            <h3>
-                2023
-            </h3>
-        </div>
-        <article class="projects">
-            <a href="project_2.html" class="projectCover">
-                <div class="image-container"><img src="images/CosmicR_cover.jpg" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Cosmic Resonator</p>
-                    <p>Physical Game</p>
-                </div>
-            </a>
-            <a href="https://itch.io/jam/games-now-jam-autumn2023/rate/2363964" class="projectCover">
-                <div class="image-container"><img src="images/crossing_liminal_cover.png" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Crossing the Liminal</p>
-                    <p>Dogding Game</p>
-                </div>
-            </a>
-            <a href="https://newmedia.dog/courses/audiovisual-studio/2023/jiayi-li/" class="projectCover">
-                <div class="image-container"><img src="images/face_cover.png" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Meet Your New Face</p>
-                    <p>Audiovisual Art</p>
-                </div>
-            </a>
-            <a class="projectCover">
-                <div class="image-container"><img src="images/nora_cover.jpg" alt=“cover” /></div>
-                <div class="headline">
-                    <p>Herstory of Nora</p>
-                    <p>Mobile Game</p>
-                </div>
-            </a>
-        </article>
-        <div class="header">
-            <h3>
-                2022
-            </h3>
-        </div>
-        <article class="projects">
+        <article class="selectedProjects">
             <a href="project_1.html" class="projectCover">
-                <div class="image-container">
-                    <img src="images/being_cover.jpg" alt="cover" />
-                </div>
+                <img src="images/being_cover.jpg" data-hover-src="images/being_cover_1.jpg" alt=“cover” />
                 <div class="headline">
-                    <p>BEING</p>
-                    <p>VR Game</p>
+                    <h3>BEING</h3>
+                    <h3>VR Game</h3>
                 </div>
             </a>
-            <a href="" class="projectCover">
-                <div class="image-container">
-                    <img src="images/odyssey_cover.png" alt="cover" />
-                </div>
-                <div class="headline">
-                    <p>Gravity Odyssey</p>
-                    <p>Collecting Game</p>
-                </div>
+            <a href="project_2.html" class="projectCover">
+                    <img src="images/CosmicR_cover.jpg" data-hover-src="images/CosmicR_cover_1.jpg" alt=“cover” />
+                    <div class="headline">
+                        <h3>Cosmic Resonator</h3>
+                        <h3>Physical Game</h3>
+                    </div>
             </a>
-            <a class="projectCover">
-                <div class="image-container"><img src="images/fungiCity_cover.png" alt=“cover” /></div>
+            <div class="projectCover">
+                <img src="images/moai_cover.png" data-hover-src="images/moai_cover_1.png" alt=“cover” />
                 <div class="headline">
-                    <p>Fungi City</p>
-                    <p>Digital Art</p>
+                    <h3>MOAI</h3>
+                    <h3>Puzzle Game</h3>
                 </div>
-            </a>
-            <a href="" class="projectCover">
-                <div class="image-container">
-                    <img src="images/ItsGoingToBeLate_cover.png" alt="cover" />
-                </div>
+            </div>
+            <div class="projectCover">
+                <img src="images/fungiCity_cover.png" data-hover-src="images/fungiCity_cover_1.png" alt=“cover” />
                 <div class="headline">
-                    <p>It's going to be LATE</p>
-                    <p>Local-twoplayer Game</p>
+                    <h3>Fungi City</h3>
+                    <h3>Digital Art</h3>
                 </div>
-            </a>
-            <a class="projectCover">
-                <div class="image-container">
-                    <img src="images/moai_cover.png" alt=“cover” />
-                </div>
-                <div class="headline">
-                    <p>MOAI</p>
-                    <p>Puzzle Game</p>
-                </div>
-            </a>
+            </div>
         </article>
-        <div class="header">
-            <h3>
-                2021
-            </h3>
-        </div>
-        <article class="projects">
-            <a href="" class="projectCover">
-                <div class="image-container">
-                    <img src="images/moon_rover_cover.png" alt="cover" />
-                </div>
-                <div class="headline">
-                    <p>Moon Rover 2035</p>
-                    <p>Serious Game</p>
-                </div>
+        <section class="toIndex">
+            <a href="catalogs.html">
+                <h2 class="zoom">
+                    All Projects
+                </h2>
             </a>
-        </article>
+        </section>
     </section>
 
     <footer>
