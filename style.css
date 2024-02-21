@@ -404,7 +404,7 @@ section.bigBackground{
     margin-bottom: 0;
 }
 
-section.bigBackground > :first-child{
+section.bigBackground .intro{
     padding-top: 20px;
 }
 
@@ -423,12 +423,13 @@ section.ratio0{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 0;
     margin-bottom: 15px;
 }
 
 section.ratio0 article{
-    width: 70vw;
+    width: 100%;
 }
 
 section.ratio1{
