@@ -70,6 +70,15 @@ h4{
     line-height: normal;
     font-family: 'Hepta Slab', serif;
 }
+h5{
+    margin-top: auto;
+    font-size: 14px;
+    color: var(--txt1);
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    font-family: 'Roboto';
+}
 
 p{
     color: var(--txt2);
@@ -347,9 +356,9 @@ polygon:hover{
     justify-content: space-between;
     align-items:flex-start;
 }
-.about img{
+/*.about img{
     width: 33%;
-}
+}*/
 .about article{
     width: 40%;
     display: flex;
