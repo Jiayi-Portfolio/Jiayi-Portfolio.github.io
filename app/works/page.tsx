@@ -89,7 +89,7 @@ const simpleProjects = [
     categories: ["web","newmedia"],
     year: "2024",
     tags: ["Web Design","Web Development", "JavaScript","Html & CSS"],
-    demoLink: "https://jiayi-portfolio.github.io/index.html",
+    demoLink: "https://jiayili18.github.io/Jiayi-s-Portfolio/",
   },
   {
     title: "Cat Impact",
