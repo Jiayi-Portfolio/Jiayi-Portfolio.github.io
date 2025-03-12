@@ -31,9 +31,9 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
-  "homepage": "https://JiayiLi18.github.io/Portfolio",
+  "homepage": "https://jiayi-portfolio.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JiayiLi18.github.io/Portfolio.git"
+    "url": "https://github.com/Jiayi-Portfolio/Jiayi-Portfolio.github.io.git"
   }
 }
