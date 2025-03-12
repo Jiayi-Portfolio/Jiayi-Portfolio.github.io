@@ -1,0 +1,39 @@
+{
+  "name": "jiayi-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d out -f"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.1",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.17.0",
+    "lucide-react": "^0.471.0",
+    "next": "^15.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.10",
+    "@types/react": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.16",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  },
+  "homepage": "https://JiayiLi18.github.io/Portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JiayiLi18.github.io/Portfolio.git"
+  }
+}

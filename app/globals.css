@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1800A0;
+  --color-accent: #D9FF1B;
+}
+
+
+/* Cloud Animation Styles */
+.cloud-container {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.cloud-image {
+  position: absolute;
+}
+
+.cloud-image-blur {
+  position: absolute;
+  filter: blur(4px);
+}
+
+.cloud-slow {
+  animation: cloud-scroll 180s linear infinite;
+}
+
+.cloud-medium {
+  animation: cloud-scroll 80s linear infinite;
+}
+
+@keyframes cloud-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
