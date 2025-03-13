@@ -66,7 +66,7 @@ const ProjectOverlay = ({ project }: { project: Project }) => {
         <p className="font-mono text-sm">
           <span className="text-accent bg-primary px-1 py-0.5">{project.title}</span>
         </p>
-        <p className="text-sm max-w-[80%]">
+        <p className="text-sm max-w-[80%] hidden md:block">
           <span className="text-white/60 bg-primary px-1 py-0.5">{project.description}</span>
         </p>
         <div className="flex flex-wrap gap-2">
