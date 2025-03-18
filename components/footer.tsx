@@ -8,6 +8,9 @@ export function Footer() {
           <div className="text-sm">
             © {new Date().getFullYear()} Jiayi Li. All rights reserved.
           </div>
+          <div className="text-sm">
+            All made by Jiayi with ❤
+          </div>
           <div className="flex gap-8 text-sm">
             <Link 
               href="mailto:jiayi.li0004@gmail.com"
