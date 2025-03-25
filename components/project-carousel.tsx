@@ -30,10 +30,10 @@ const projects: Project[] = [
     id: "2",
     title: "BEING",
     description:
-      "Interactive playground merging physical play with digital elements",
+      "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
     image: "./projects/being-cover.png",
     year: "2022",
-    tags: ["Arduino", "Processing", "Physical Computing"],
+    tags: ["Arduino", "VR", "Unity", "Wearable Devices", "Game"],
     href: "/being"
   },
   {

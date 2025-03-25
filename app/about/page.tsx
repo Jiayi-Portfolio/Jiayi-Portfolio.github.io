@@ -190,6 +190,7 @@ export default function About() {
                 Hi, I&#39;m Jiayi. I create engaging digital interactions and new media art with my interdisciplinary background. <br />
                 I design and develop games and arts of various forms. Every project adds a unique piece of my creativity and gets me ready for the next new idea—whether it&#39;s a video game or a playful installation.<br />
                 I also have extensive experience using generative AI to create efficiently, as I&#39;m always curious about new technologies in creative fields.<br />
+                Beyond my work, I like hiking, needle felting, drawing, swimming and of course, playing games.<br />
                 If you&#39;re interested about my experience...Let&#39;s connect XD!
                 </span>
             </p>

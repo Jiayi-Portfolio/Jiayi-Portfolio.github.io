@@ -32,7 +32,7 @@ const mainProjects = [
     image: "./projects/being-cover.png",
     categories: ["vr", "game", "arduino"],
     year: "2022",
-    tags: ["VR", "Unity", "Arduino", "Wearable Devices"],
+    tags: ["VR", "Unity", "Arduino", "Wearable Devices", "Game"],
     href: "/being"
   },
   {
