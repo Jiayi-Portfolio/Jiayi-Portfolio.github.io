@@ -225,6 +225,17 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                                 <ChevronRight className="h-4 w-4 text-white" />
                             </Button>
                         </div>
+
+                        {/* Exit Button */}
+                        <div className="absolute top-0 right-0 flex items-center z-50">
+                            <Button
+                                size="icon"
+                                onClick={closeModal}
+                                className="rounded-full bg-transparent hover:bg-black/50"
+                            >
+                                <span className="text-white">X</span>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             )}
