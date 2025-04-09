@@ -193,7 +193,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                     onClick={closeModal}
                 >
                     <div
-                        className="relative max-w-6xl w-full px-12"
+                        className="relative max-w-6xl w-full h-auto px-12"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Image */}
@@ -227,7 +227,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                         </div>
 
                         {/* Exit Button */}
-                        <div className="absolute top-0 right-0 flex items-center z-50">
+                        <div className="absolute top-0 right-0 z-50">
                             <Button
                                 size="icon"
                                 onClick={closeModal}
