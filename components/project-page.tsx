@@ -197,7 +197,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Image */}
-                        <div className="relative z-10">
+                        <div className="relative flex items-center z-10 w-10/12 h-fit">
                             <Image
                                 src={projectData.images[currentImageIndex]}
                                 alt={`Image ${currentImageIndex + 1}`}
