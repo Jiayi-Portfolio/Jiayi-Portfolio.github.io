@@ -75,15 +75,6 @@ const mainProjects = [
 
 const simpleProjects = [
   {
-    title: "LEGO Magic Wand",
-    description: "An interactive installation where users build their own LEGO wands, then wave them to cast digital spells in real time using motion tracking and particle effects.",
-    image: './projects/others/lego-wand-cover.png',
-    categories: ["installation", "game", "newmedia"],
-    year: "2024",
-    tags: ["Unity", "LEGO", "Real-time Interaction", "Motion Tracking", "Creative Play"],
-    demoLink: "https://youtu.be/lYMSq241AnI",
-  },
-  {
     title: "Jiayi's Protfolio Website 2.0",
     description: "The first time I challenged myself using React and Next.js with the help of GenAI coding",
     image:  './projects/others/web2_cover.png',
@@ -91,6 +82,15 @@ const simpleProjects = [
     year: "2025",
     tags: ["Web Design","Web Development", "Full Stack", "React","Next.js","GenAI"],
     demoLink: "./",
+  },
+  {
+    title: "LEGO Magic Wand",
+    description: "An interactive installation where users build their own LEGO wands, then wave them to cast digital spells in real time using motion tracking and particle effects.",
+    image: './projects/others/lego_wand_cover.png',
+    categories: ["installation", "game", "newmedia"],
+    year: "2024",
+    tags: ["Unity", "LEGO", "Real-time Interaction", "Motion Tracking", "Creative Play"],
+    demoLink: "https://youtu.be/lYMSq241AnI",
   },
   {
     title: "Monster Cleaning Inc",
