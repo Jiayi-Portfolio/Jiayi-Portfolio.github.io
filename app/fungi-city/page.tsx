@@ -6,7 +6,7 @@ const projectData = {
   title: "Fungi City",
   subtitle: "Performative AI: Neural Models + Agents, made by Unity",
   description: `Fungi City is a digital art project that juxtaposes the chaotic growth of high-density urban living spaces with the dynamic nature of microbial colonies. Inspired by the unrestrained development of subtropical residential areas like Chongqing, the project simulates a continuously growing metaverse environment using AI processing. By blending generative AI, computational design, and neural models, Fungi City explores the transient nature of urban life and societal evolution, creating a virtual space that evolves like a living organism.`,
-  tools: ["Unity", "Neural Models", "GANs", "Generative AI Tools"],
+  tools: ["Unity", "Disco Diffusion", "GANs", "Houdini", "Blender"],
   videoUrl: "https://www.youtube.com/embed/CAKVTn5Fna8?si=Ag7EtN9DMPmjjo-s", // Add video URL if available
   images: ['./projects/fungi-city/cover.jpg',
 

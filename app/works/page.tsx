@@ -9,6 +9,16 @@ import { HomeBackground } from '@/components/home-background'
 
 const mainProjects = [
   {
+    title: "Stellar Surfer",
+    description:
+      "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
+    image: "./projects/stellar-surfer/cover.png", 
+    categories: ["game", "installation", "technical", "arduino"],
+    year: "2024",
+    tags: ["Unity", "Arduino", "Embodied Interaction"],
+    href: "/stellar-surfer",
+  },
+  {
     title: "Babel Reconstruction",
     description: "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
     image: './projects/babel/cover.png',
@@ -64,6 +74,15 @@ const mainProjects = [
 ]
 
 const simpleProjects = [
+  {
+    title: "LEGO Magic Wand",
+    description: "An interactive installation where users build their own LEGO wands, then wave them to cast digital spells in real time using motion tracking and particle effects.",
+    image: './projects/others/lego-wand-cover.png',
+    categories: ["installation", "game", "newmedia"],
+    year: "2024",
+    tags: ["Unity", "LEGO", "Real-time Interaction", "Motion Tracking", "Creative Play"],
+    demoLink: "https://youtu.be/lYMSq241AnI",
+  },
   {
     title: "Jiayi's Protfolio Website 2.0",
     description: "The first time I challenged myself using React and Next.js with the help of GenAI coding",

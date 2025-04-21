@@ -34,6 +34,16 @@ const projects = [
     href: "/cosmic-resonator",
   },
   {
+    title: "Stellar Surfer",
+    description:
+      "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
+    image: "./projects/stellar-surfer/cover.png", 
+    categories: ["game", "installation", "technical", "arduino"],
+    year: "2024",
+    tags: ["Unity", "Arduino", "Embodied Interaction"],
+    href: "/stellar-surfer",
+  },
+  {
     title: "Babel Reconstruction",
     description:
       "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
