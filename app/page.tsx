@@ -111,8 +111,8 @@ export default function Home() {
 
         {/* Featured Projects */}
         <section className="py-32 px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-mono mb-16 text-primary">Featured Projects</h2>
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-center text-2xl font-mono mb-16 text-primary">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
               {projects.map((project, index) => (
                 <ProjectCard key={index} {...project} />

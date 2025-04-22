@@ -149,7 +149,7 @@ export default function About() {
   }
 
   return (
-    <div className="min-h-screen font-mono">
+    <div className="min-h-screen">
       <Nav />
       <ScrollIndicator />
       <main className=" text-black w-full">
@@ -184,7 +184,7 @@ export default function About() {
             </div>
           </div>
           <div className="w-full md:w-2/3 space-y-6 md:ml-12 text-accent">
-            <h1 className="text-2xl font-normal w-fit bg-primary">About Me</h1>
+            <h1 className="font-mono text-2xl font-normal w-fit bg-primary">About Me</h1>
             <p>
               <span className="bg-primary">
                 Hi, I&#39;m Jiayi. I create engaging digital interactions and new media art with my interdisciplinary background. <br />
@@ -195,7 +195,7 @@ export default function About() {
                 </span>
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="font-mono flex flex-wrap gap-4">
               <Link href="mailto:jiayi.li0004@gmail.com" className="bg-primary flex items-center gap-2 hover:underline">
                 <Mail className="h-5 w-5" />
                 <span>Email</span>
@@ -230,7 +230,7 @@ export default function About() {
         <div className="bg-white mx-0 px-4 py-24 space-y-24">
           {/* Skills with Visualization */}
           <section className="space-y-6 flex flex-col items-center">
-            <h2 className="text-2xl font-normal text-center text-primary">Skills & Technologies</h2>
+            <h2 className="font-mono text-2xl font-normal text-center text-primary">Skills & Technologies</h2>
             <div className="bg-primary/5 rounded-lg p-8 text-center max-w-5xl mx-auto">
               <p className="text-base md:text-xl font-light text-neutral-600 italic">
                 I&#39;m not a polymath - just someone who keeps tripping over problems,
@@ -241,7 +241,7 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl text-center">
               {Object.entries(qualitativeSkills).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
-                  <h3 className="text-xl font-normal mb-4 text-primary">{category}</h3>
+                  <h3 className="text-xl font-mono font-normal mb-4 text-primary">{category}</h3>
                   <div className="grid grid-cols-1 gap-2">
                     {skills.map((skill, index) => (
                       <div key={index} className="bg-neutral-100 rounded-md p-2 text-center text-sm">
@@ -256,7 +256,7 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl">
               {Object.entries(skillsWithLevels).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
-                  <h3 className="text-xl font-normal mb-4 text-primary">{category}</h3>
+                  <h3 className="font-mono text-xl font-normal mb-4 text-primary">{category}</h3>
                   <div className="space-y-3">
                     {skills.map((skill, index) => (
                       <div key={index} className="space-y-1">
@@ -277,7 +277,7 @@ export default function About() {
 
           {/* Work Experience - New Section */}
           <section className="space-y-6">
-            <h2 className="text-2xl text-primary font-normal text-center">Work Experience</h2>
+            <h2 className="font-mono text-2xl text-primary font-normal text-center">Work Experience</h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {experiences.map((exp, index) => (
                 <div key={index} className="bg-white shadow p-6">
@@ -295,7 +295,7 @@ export default function About() {
 
           {/* Education - New Section */}
           <section className="bg-white space-y-6">
-            <h2 className="text-2xl text-primary font-normal text-center">Education</h2>
+            <h2 className="font-mono text-2xl text-primary font-normal text-center">Education</h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {education.map((edu, index) => (
                 <div key={index} className="bg-white shadow p-6">
@@ -309,7 +309,7 @@ export default function About() {
 
           {/* Contact Form*/}
           <section className="bg-white space-y-6">
-            <h2 className="text-2xl text-primary font-normal text-center">Get in Touch</h2>
+            <h2 className="font-mono text-2xl text-primary font-normal text-center">Get in Touch</h2>
             <div className="flex flex-col items-center justify-center md:flex-row gap-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-2">

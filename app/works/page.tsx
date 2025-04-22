@@ -189,7 +189,7 @@ export default function Works() {
         />
 
         <main className="px-4 pt-8">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             {/* Main Projects */}
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               {filteredFeatured.map((project) => (

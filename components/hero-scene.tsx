@@ -29,9 +29,9 @@ export function HeroScene() {
                   </span>
                 </h1>
               </motion.div>
-              <p className="text-xl font-light">
-                <span className="text-accent px-2 box-decoration-clone">
-                  TECHNICAL ARTIST •
+              <p className="text-xl font-normal">
+                <span className="text-accent px-2 pb-2 box-decoration-clone">
+                  CREATIVE TECHNOLOGIST •
                   INTERACTIVE PLAY DESIGNER</span>
               </p>
             </div>
