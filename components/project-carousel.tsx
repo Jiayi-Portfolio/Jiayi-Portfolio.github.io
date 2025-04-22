@@ -23,7 +23,7 @@ const projects: Project[] = [
       "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
     image: './projects/babel/cover.png',
     year: "2024",
-    tags: ["Unity", "GenAI", "ComfyUI", "Shader", "Interactive Art"],
+    tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
     href: "/babel-reconstruction",
   },
   {
@@ -48,6 +48,16 @@ const projects: Project[] = [
   },
   {
     id: "4",
+    title: "Stellar Surfer",
+    description:
+      "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
+    image: "./projects/stellar-surfer/cover.png",
+    year: "2024",
+    tags: ["Unity", "Arduino", "Embodied Interaction"],
+    href: "/stellar-surfer",
+  },
+  {
+    id: "5",
     title: "FUNGI CITY",
     description:
       "An interactive installation exploring biological systems through digital art",
@@ -55,6 +65,15 @@ const projects: Project[] = [
     year: "2022",
     tags: ["Unity", "Houdini", "Interactive Installation"],
     href: "/fungi-city",
+  },
+  {
+    id: "6",
+    title: "Moon Rover 2035",
+    description: "A realistic lunar driving simulator designed as an educational game to immerse players in lunar exploration and aerospace science.",
+    image: './projects/moon-rover/cover.jpg',
+    year: "2021",
+    tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls"],
+    href: "/moon-rover"
   },
 
 ]
@@ -146,13 +165,13 @@ export function ProjectCarousel() {
             style={{ width: slideWidth }}
           >
             <div className="relative h-full w-full">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         ))}
