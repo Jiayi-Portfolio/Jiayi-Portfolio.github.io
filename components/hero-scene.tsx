@@ -22,14 +22,14 @@ export function HeroScene() {
                 transition={{ duration: 0.8 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <h1 className="text-7xl font-medium"
+                <h1 className="text-7xl font-light"
                 >
                   <span className="text-accent px-2 box-decoration-clone">
                     JIAYI LI
                   </span>
                 </h1>
               </motion.div>
-              <p className="text-xl font-medium">
+              <p className="text-xl font-light">
                 <span className="text-accent px-2 box-decoration-clone">
                   TECHNICAL ARTIST •
                   INTERACTIVE PLAY DESIGNER</span>

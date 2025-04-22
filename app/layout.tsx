@@ -25,12 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
       <body>
-        <div className={`${inter.variable} ${sora.variable}`}>
-          {children}
-        </div>
+        {children}
       </body>
     </html>
-  );
+  )
 }

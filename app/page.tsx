@@ -95,7 +95,7 @@ export default function Home() {
       <ScrollIndicator />
 
       {/* Main Hero Section occupying the full viewport */}
-      <div className="flex-grow relative flex flex-col h-screen pt-20">
+      <div className="flex-grow relative flex flex-col h-screen pt-16">
         {/* Centered Carousel */}
         <div className="flex-grow flex items-center justify-center">
           <ProjectCarousel />
