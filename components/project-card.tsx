@@ -43,7 +43,7 @@ export function ProjectCard({
             <div className="text-sm text-neutral-500 space-y-1">
               {categories.map(cat => categoryNames[cat]).join(' · ')}
             </div>
-            <Link href={href} className="hover:text-accent transition-colors font-mono font-medium text-primary">
+            <Link href={href} className="hover:text-accent transition-colors font-sans font-medium text-primary">
               {title}
             </Link>
             <div className="text-sm text-neutral-500">{year}</div>

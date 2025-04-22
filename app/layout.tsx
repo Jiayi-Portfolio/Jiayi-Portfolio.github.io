@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Inter, Urbanist } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={urbanist.variable}>
+        <div className={`${inter.variable} ${urbanist.variable}`}>
           {children}
         </div>
       </body>

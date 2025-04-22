@@ -7,6 +7,9 @@
   --color-accent: #D9FF1B;
 }
 
+html {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
 
 /* Cloud Animation Styles */
 .cloud-container {
