@@ -63,7 +63,7 @@ const ProjectOverlay = ({ project }: { project: Project }) => {
   return (
     <div className="w-full py-6 px-8">
       <div className="space-y-3 w-full">
-        <p className="font-mono text-sm">
+        <p className="font-sans text-sm">
           <span className="text-accent bg-primary px-1 py-0.5">{project.title}</span>
         </p>
         <p className="text-sm max-w-[80%] hidden md:block">
