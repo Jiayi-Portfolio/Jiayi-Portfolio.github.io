@@ -10,7 +10,11 @@ module.exports = {
       colors: {
         primary: 'var(--color-primary)',
         accent: 'var(--color-accent)',
-      }
+      },
+      fontFamily: {
+        sans: ['var(--font-urbanist)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-urbanist)', 'monospace'],
+      },
     }
   },
   plugins: [],
