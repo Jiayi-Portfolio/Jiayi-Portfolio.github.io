@@ -1,7 +1,6 @@
 "use client"
 
 import { Nav } from "@/components/nav"
-import { HomeBackground } from "@/components/home-background"
 import { ScrollIndicator } from "@/components/scroll-indicator"
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, ChevronLeft, ChevronRight, Instagram, ExternalLink } from 'lucide-react'
