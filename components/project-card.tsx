@@ -40,13 +40,13 @@ export function ProjectCard({
       <div className="p-4 space-y-2">
         <div className="flex justify-between items-start">
           <div>
-            <div className="text-sm text-neutral-500 space-y-1">
+            <div className="text-xs text-neutral-500 space-y-1">
               {categories.map(cat => categoryNames[cat]).join(' · ')}
             </div>
             <Link href={href} className="hover:text-accent transition-colors font-mono font-medium text-primary">
               {title}
             </Link>
-            <div className="text-sm text-neutral-500">{year}</div>
+            <div className="text-xs text-neutral-500">{year}</div>
           </div>
           <div className="flex gap-2">
             <Button size="sm" variant="ghost" asChild>
@@ -57,7 +57,7 @@ export function ProjectCard({
             </Button>
           </div>
         </div>
-        <p className="text-sm text-neutral-600">{description}</p>
+        <p className="text-xs text-neutral-600">{description}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <span 

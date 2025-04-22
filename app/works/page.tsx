@@ -191,7 +191,7 @@ export default function Works() {
         <main className="px-4 pt-8">
           <div className="max-w-5xl mx-auto">
             {/* Main Projects */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div className="grid md:grid-cols-3 gap-12 mb-16">
               {filteredFeatured.map((project) => (
                 <ProjectCard
                   key={project.title}
@@ -201,7 +201,7 @@ export default function Works() {
             </div>
 
             {/* Simple Projects */}
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
               {filteredSimple.map((project) => (
                 <SimpleProjectCard
                   key={project.title}

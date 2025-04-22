@@ -153,9 +153,8 @@ export default function About() {
       <Nav />
       <ScrollIndicator />
       <main className=" text-black w-full">
-        <HomeBackground />
         {/* Bio and Photo Carousel */}
-        <section className="h-full md:h-screen max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-center p-8 pt-16 md:pt-0">
+        <section className="h-full md:h-screen max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center p-8 pt-16 md:pt-0">
           <div className="w-full md:w-1/3 flex justify-center mb-0">
             <div className="relative">
               <Image
@@ -183,10 +182,9 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-2/3 space-y-6 md:ml-12 text-accent">
-            <h1 className="font-mono text-2xl font-normal w-fit bg-primary">About Me</h1>
+          <div className="w-full md:w-2/3 space-y-6 md:ml-12 text-primary">
             <p>
-              <span className="bg-primary">
+              <span className="font-mono text-sm">
                 Hi, I&#39;m Jiayi. I create engaging digital interactions and new media art with my interdisciplinary background. <br />
                 I design and develop games and arts of various forms. Every project adds a unique piece of my creativity and gets me ready for the next new idea—whether it&#39;s a video game or a playful installation.<br />
                 I also have extensive experience using generative AI to create efficiently, as I&#39;m always curious about new technologies in creative fields.<br />
@@ -196,23 +194,23 @@ export default function About() {
             </p>
 
             <div className="font-mono flex flex-wrap gap-4">
-              <Link href="mailto:jiayi.li0004@gmail.com" className="bg-primary flex items-center gap-2 hover:underline">
+              <Link href="mailto:jiayi.li0004@gmail.com" className="flex items-center gap-2 hover:underline">
                 <Mail className="h-5 w-5" />
                 <span>Email</span>
               </Link>
-              <Link href="https://github.com/JiayiLi18" className="bg-primary flex items-center gap-2 hover:underline">
+              <Link href="https://github.com/JiayiLi18" className="flex items-center gap-2 hover:underline">
                 <Github className="h-5 w-5" />
                 <span>GitHub</span>
               </Link>
-              <Link href="https://www.linkedin.com/in/jiayi-li0414/" className="bg-primary flex items-center gap-2 hover:underline">
+              <Link href="https://www.linkedin.com/in/jiayi-li0414/" className="flex items-center gap-2 hover:underline">
                 <Linkedin className="h-5 w-5" />
                 <span>LinkedIn</span>
               </Link>
-              <Link href="https://www.instagram.com/jiayi_li_2000/" className="bg-primary flex items-center gap-2 hover:underline">
+              <Link href="https://www.instagram.com/jiayi_li_2000/" className="flex items-center gap-2 hover:underline">
                 <Instagram className="h-5 w-5" />
                 <span>Instagram</span>
               </Link>
-              <Link href="https://lijiayii.itch.io/" className="bg-primary flex items-center gap-2 hover:underline">
+              <Link href="https://lijiayii.itch.io/" className="flex items-center gap-2 hover:underline">
                 <ExternalLink className="h-5 w-5" />
                 <span>itch.io</span>
               </Link>
@@ -232,7 +230,7 @@ export default function About() {
           <section className="space-y-6 flex flex-col items-center">
             <h2 className="font-mono text-2xl font-normal text-center text-primary">Skills & Technologies</h2>
             <div className="bg-primary/5 rounded-lg p-8 text-center max-w-5xl mx-auto">
-              <p className="text-base md:text-xl font-light text-neutral-600 italic">
+              <p className="text-sm font-light text-neutral-600 italic">
                 I&#39;m not a polymath - just someone who keeps tripping over problems,
                 then can&#39;t stop building better shovels to dig through them ;)
               </p>
@@ -241,10 +239,10 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl text-center">
               {Object.entries(qualitativeSkills).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
-                  <h3 className="text-xl font-mono font-normal mb-4 text-primary">{category}</h3>
+                  <h3 className="text-sm font-mono font-normal mb-4 text-primary">{category}</h3>
                   <div className="grid grid-cols-1 gap-2">
                     {skills.map((skill, index) => (
-                      <div key={index} className="bg-neutral-100 rounded-md p-2 text-center text-sm">
+                      <div key={index} className="bg-neutral-100 rounded-md p-2 text-center text-xs">
                         {skill}
                       </div>
                     ))}
@@ -256,11 +254,11 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl">
               {Object.entries(skillsWithLevels).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
-                  <h3 className="font-mono text-xl font-normal mb-4 text-primary">{category}</h3>
+                  <h3 className="font-mono text-sm font-normal mb-4 text-primary">{category}</h3>
                   <div className="space-y-3">
                     {skills.map((skill, index) => (
                       <div key={index} className="space-y-1">
-                        <div className="text-sm">{skill.name}</div>
+                        <div className="text-xs">{skill.name}</div>
                         <div className="h-2 bg-neutral-200 rounded-full">
                           <div
                             className="h-full bg-primary rounded-full transition-all"
@@ -280,10 +278,10 @@ export default function About() {
             <h2 className="font-mono text-2xl text-primary font-normal text-center">Work Experience</h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="bg-white shadow p-6">
-                  <h3 className="text-xl font-normal">{exp.title}</h3>
+                <div key={index} className="bg-white shadow p-6 text-sm">
+                  <h3 className="font-normal">{exp.title}</h3>
                   <p className="text-neutral-600 mb-2">{exp.company} | {exp.duration} | {exp.location}</p>
-                  <ul className="list-disc list-inside text-neutral-600">
+                  <ul className="text-xs list-disc list-inside text-neutral-600">
                     {exp.details.map((detail, i) => (
                       <li key={i}>{detail}</li>
                     ))}
@@ -296,12 +294,12 @@ export default function About() {
           {/* Education - New Section */}
           <section className="bg-white space-y-6">
             <h2 className="font-mono text-2xl text-primary font-normal text-center">Education</h2>
-            <div className="max-w-3xl mx-auto space-y-8">
+            <div className="max-w-3xl mx-auto space-y-8 text-sm">
               {education.map((edu, index) => (
                 <div key={index} className="bg-white shadow p-6">
-                  <h3 className="text-xl font-normal">{edu.degree}</h3>
+                  <h3 className="font-normal">{edu.degree}</h3>
                   <p className="text-neutral-600">{edu.school} | {edu.duration} | {edu.location}</p>
-                  <p className="text-neutral-600 mt-2">{edu.focus}</p>
+                  <p className="text-xs text-neutral-600 mt-2">{edu.focus}</p>
                 </div>
               ))}
             </div>

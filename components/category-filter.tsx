@@ -32,14 +32,14 @@ interface CategoryFilterProps {
 export function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
   return (
     <div className="sticky top-20 z-40 py-4">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-wrap gap-4 font-mono">
           {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => onCategoryChange(category.id)}
               className={`
-                px-4 py-2 text-sm rounded-full transition-colors
+                px-4 py-2 text-xs rounded-full transition-colors
                 ${activeCategory === category.id 
                   ? 'bg-primary text-white' 
                   : 'bg-neutral-100 text-neutral-600 hover:bg-accent'

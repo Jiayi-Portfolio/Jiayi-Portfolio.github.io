@@ -48,7 +48,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
 
     return (
         <main className="min-h-screen bg-white text-black">
-            <div className="pt-24 px-6">
+            <div className="pt-24 px-10">
                 {/* Hero */}
                 <section className="mb-12">
                     <div className="max-w-5xl mx-auto aspect-[16/9] relative overflow-hidden">
@@ -66,14 +66,14 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                 <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 mb-24">
                     <div className="space-y-6">
                         <h1 className="text-4xl font-mono font-light text-primary">{projectData.title}</h1>
-                        <h2 className="text-2xl font-mono font-light text-neutral-600">{projectData.subtitle}</h2>
-                        <p className="text-neutral-600 text-sm leading-relaxed">
+                        <h2 className="text-xl font-mono font-light text-neutral-600">{projectData.subtitle}</h2>
+                        <p className="text-neutral-600 text-xs leading-relaxed">
                             {projectData.description}
                         </p>
                     </div>
                     <div className="space-y-12">
                         <div>
-                            <h2 className="text-2xl font-mono text-primary mb-4">MY CONTRIBUTIONS</h2>
+                            <h2 className="text-xl font-mono text-primary mb-4">MY CONTRIBUTIONS</h2>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
                                 {projectData.contributions.map((contribution, index) => (
                                     <li
@@ -89,7 +89,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                             </ul>
                         </div>
                         <div>
-                            <h2 className="text-2xl font-mono text-primary mb-4">TOOLS</h2>
+                            <h2 className="text-xl font-mono text-primary mb-4">TOOLS</h2>
                             <div className="flex flex-wrap gap-2">
                                 {projectData.tools.map((tool, index) => (
                                     <span
