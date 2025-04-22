@@ -18,7 +18,7 @@ export function Nav({ alwaysLight }: { alwaysLight?: boolean }) {
 
   return (
     <nav className={cn(
-      "w-full p-8 fixed top-0 z-10 font-mono font-medium transition-all duration-100",
+      "w-full p-7 fixed top-0 z-10 font-mono font-normal text-sm transition-all duration-100",
       alwaysLight
         ? "text-primary bg-white"
         : scrolled 
