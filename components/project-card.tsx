@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ExternalLink } from "lucide-react"
 import { Button } from "./ui/button"
+import { categoryNames } from "./category-filter"
 
 interface ProjectCardProps {
   title: string
@@ -63,7 +64,7 @@ export function ProjectCard({
               key={index}
               className="text-[10px] px-2 py-1 bg-neutral-100 rounded-full text-neutral-600"
             >
-              {cat}
+              {categoryNames[cat]}
             </span>
           ))}
         </div>
