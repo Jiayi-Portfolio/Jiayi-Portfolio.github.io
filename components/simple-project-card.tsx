@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { ExternalLink } from "lucide-react"
 import { Button } from "./ui/button"
-import { categoryNames } from "./category-filter"
 
 interface SimpleProjectCardProps {
   title: string
