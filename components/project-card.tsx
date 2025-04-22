@@ -56,7 +56,7 @@ export function ProjectCard({
         </div>
         <p className="text-xs text-neutral-600">{description}</p>
         <div className="text-[10px] text-neutral-500 space-y-1">
-          {tags.map(tag => categoryNames[tag]).join(' · ')}
+          {tags.join(' · ')}
         </div>
         <div className="flex flex-wrap gap-1">
           {categories.map((cat, index) => (
