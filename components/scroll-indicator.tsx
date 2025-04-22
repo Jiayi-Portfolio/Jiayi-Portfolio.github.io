@@ -33,7 +33,7 @@ export function ScrollIndicator() {
         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
       >
         <ChevronDown 
-          className="w-10 h-10 text-accent" 
+          className="w-10 h-10" 
           strokeWidth={1.5}
         />
       </motion.div>

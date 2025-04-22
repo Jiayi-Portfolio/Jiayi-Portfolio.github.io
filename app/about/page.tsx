@@ -149,8 +149,8 @@ export default function About() {
 
   return (
     <div className="min-h-screen">
-      <Nav />
-      <ScrollIndicator />
+      <Nav alwaysLight />
+      <div className="text-primary"><ScrollIndicator /></div>
       <main className=" text-black w-full">
         {/* Bio and Photo Carousel */}
         <section className="h-full md:h-screen max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center p-8 pt-16 md:pt-0">

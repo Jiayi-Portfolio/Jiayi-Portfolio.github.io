@@ -92,7 +92,7 @@ export default function Home() {
       <div className="relative z-50">
         <Nav />
       </div>
-      <ScrollIndicator />
+      <div className="text-accent"><ScrollIndicator /></div>
 
       {/* Main Hero Section occupying the full viewport */}
       <div className="flex-grow relative flex flex-col h-screen pt-16">

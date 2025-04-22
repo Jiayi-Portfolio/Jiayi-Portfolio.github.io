@@ -24,7 +24,7 @@ const mainProjects = [
     image: './projects/babel/cover.png',
     categories: ["ai","installation", "technical", "newmedia"],
     year: "2024",
-    tags: ["Unity", "GenAI", "ComfyUI", "Shader", "Interactive Art"],
+    tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
     href: "/babel-reconstruction"
   },
   {
@@ -33,7 +33,7 @@ const mainProjects = [
     image: "./projects/cosmic-resonator-cover.jpg",
     categories: ["installation", "game", "arduino"],
     year: "2023",
-    tags: ["Unity", "Arduino", "Physical Interaction", "Custom Sensors"],
+    tags: ["Unity","Physical Interaction", "Custom Sensors"],
     href: "/cosmic-resonator"
   },
   {
@@ -42,7 +42,7 @@ const mainProjects = [
     image: "./projects/being-cover.png",
     categories: ["vr", "game", "arduino"],
     year: "2022",
-    tags: ["VR", "Unity", "Arduino", "Wearable Devices", "Game"],
+    tags: ["VR", "Unity","Wearable Devices"],
     href: "/being"
   },
   {
@@ -68,7 +68,7 @@ const mainProjects = [
     image: './projects/moon-rover/cover.jpg',
     categories: ["game", "technical"],
     year: "2021",
-    tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls", "Substance Painter"],
+    tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls"],
     href: "/moon-rover"
   }
 ]
@@ -80,7 +80,7 @@ const simpleProjects = [
     image:  './projects/others/web2_cover.png',
     categories: ["ai","web","newmedia"],
     year: "2025",
-    tags: ["Web Design","Web Development", "Full Stack", "React","Next.js","GenAI"],
+    tags: ["Full Stack", "React","Next.js","GenAI"],
     demoLink: "./",
   },
   {
@@ -89,7 +89,7 @@ const simpleProjects = [
     image: './projects/others/lego_wand_cover.png',
     categories: ["installation", "game", "newmedia"],
     year: "2024",
-    tags: ["Unity", "LEGO", "Real-time Interaction", "Motion Tracking", "Creative Play"],
+    tags: ["Unity", "LEGO", "Motion Tracking"],
     demoLink: "https://youtu.be/lYMSq241AnI",
   },
   {
@@ -98,7 +98,7 @@ const simpleProjects = [
     image: './projects/others/monster-inc-cover.gif',
     categories: ["game", "technical"],
     year: "2024",
-    tags: ["Game Jam","Unity", "C#", "VFX","Teamwork"],
+    tags: ["Game Jam","Unity", "VFX"],
     demoLink: "https://shamitahmed.itch.io/monstercleaninginc",
   },
   {
@@ -107,7 +107,7 @@ const simpleProjects = [
     image:  './projects/others/web_cover_1.png',
     categories: ["web","newmedia"],
     year: "2024",
-    tags: ["Web Design","Web Development", "JavaScript","Html & CSS"],
+    tags: ["JavaScript","Html & CSS"],
     demoLink: "https://jiayili18.github.io/Jiayi-s-Portfolio/",
   },
   {
@@ -116,7 +116,7 @@ const simpleProjects = [
     image:  './projects/others/cat_impact_cover_1.png',
     categories: ["game"],
     year: "2024",
-    tags: ["Game Jam","Unity", "C#","Teamwork"],
+    tags: ["Game Jam","Unity"],
     demoLink: "https://lijiayii.itch.io/cat-impact",
   },
   {
@@ -125,7 +125,7 @@ const simpleProjects = [
     image: './projects/others/crossing_liminal_cover_1.png',
     categories: ["game"],
     year: "2023",
-    tags: ["Game Jam","Unity", "C#","Teamwork"],
+    tags: ["Game Jam","Unity"],
     demoLink: "https://obenyozgyur.itch.io/crossing-the-liminal",
   },
   {
@@ -134,7 +134,7 @@ const simpleProjects = [
     image:  './projects/others/face_cover_1.png',
     categories: ["ai","newmedia"],
     year: "2023",
-    tags: ["Audiovisual Art","TouchDesigner", "StableDiffusion"],
+    tags: ["Audiovisual","TouchDesigner", "StableDiffusion"],
     demoLink: "https://newmedia.dog/courses/audiovisual-studio/2023/jiayi-li/",
   },
   {
@@ -143,7 +143,7 @@ const simpleProjects = [
     image: './projects/others/nora_cover_1.jpg',
     categories: ["game"],
     year: "2023",
-    tags: ["Unity", "3D Art", "Level Design","Teamwork"],
+    tags: ["Unity", "3D Art", "Level Design"],
     demoLink: "https://youtu.be/yCFVTMXcpxM?si=KdA7JIbxeiyJAnQ4",
   },
   {
@@ -152,7 +152,7 @@ const simpleProjects = [
     image: './projects/others/odyssey_cover_1.png',
     categories: ["game"],
     year: "2023",
-    tags: ["Game Jam","Unity", "C#","UI Design","Teamwork"],
+    tags: ["Game Jam","Unity","UI Design"],
     demoLink: "https://lijiayii.itch.io/gravity-odyssey",
   },
   {
@@ -161,7 +161,7 @@ const simpleProjects = [
     image: './projects/others/ItsGoingToBeLate_cover_1.png',
     categories: ["game"],
     year: "2022",
-    tags: ["Game Jam","Unity", "2D Art","Teamwork"],
+    tags: ["Game Jam","Unity", "2D Art"],
     demoLink: "https://gmhub.com/game/1244",
   },
 ]

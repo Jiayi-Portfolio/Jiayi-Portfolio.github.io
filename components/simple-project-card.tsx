@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ExternalLink} from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import { Button } from "./ui/button"
 import { categoryNames } from "./category-filter"
 
@@ -38,13 +38,10 @@ export function SimpleProjectCard({
       <div className="p-4 space-y-2">
         <div className="flex justify-between items-start">
           <div>
-            <div className="text-xs text-neutral-500 space-y-1">
-              {categories.map(cat => categoryNames[cat]).join(' · ')}
-            </div>
-            <h3 className="font-mono font-medium text-primary">{title}</h3>
+            <h3 className="font-mono font-medium text-primary text-sm">{title}</h3>
             <div className="text-xs text-neutral-500">{year}</div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-1">
             {demoLink && (
               <Button size="icon" variant="ghost" asChild>
                 <a href={demoLink} target="_blank" rel="noopener noreferrer">
@@ -54,16 +51,19 @@ export function SimpleProjectCard({
             )}
           </div>
         </div>
-        <p className="text-xs text-neutral-600">{description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="text-[10px] text-neutral-600">{description}</p>
+        <div className="flex flex-wrap gap-1">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="text-xs px-2 py-1 bg-neutral-100 rounded-full text-neutral-600"
+              className="text-[10px] px-1 py-1 bg-neutral-100 rounded-full text-neutral-600"
             >
               {tag}
             </span>
           ))}
+        </div>
+        <div className="text-[10px] text-neutral-500 space-y-1">
+          {categories.map(cat => categoryNames[cat]).join(' · ')}
         </div>
       </div>
     </div>
