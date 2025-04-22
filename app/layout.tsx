@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Urbanist } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,7 +8,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const urbanist = Urbanist({
+const sora = Sora({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-urbanist',
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${inter.variable} ${urbanist.variable}`}>
+        <div className={`${inter.variable} ${sora.variable}`}>
           {children}
         </div>
       </body>

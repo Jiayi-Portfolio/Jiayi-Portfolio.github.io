@@ -41,7 +41,7 @@ export function SimpleProjectCard({
             <div className="text-sm text-neutral-500 space-y-1">
               {categories.map(cat => categoryNames[cat]).join(' · ')}
             </div>
-            <h3 className="font-sans font-medium text-primary">{title}</h3>
+            <h3 className="font-mono font-medium text-primary">{title}</h3>
             <div className="text-sm text-neutral-500">{year}</div>
           </div>
           <div className="flex gap-2">

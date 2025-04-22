@@ -12,8 +12,8 @@ module.exports = {
         accent: 'var(--color-accent)',
       },
       fontFamily: {
-        sans: ['var(--font-urbanist)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-urbanist)', 'monospace'],
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-sora)', 'monospace'],
       },
     }
   },
