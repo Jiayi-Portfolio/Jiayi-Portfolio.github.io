@@ -7,10 +7,6 @@
   --color-accent: #D9FF1B;
 }
 
-html {
-  font-family: theme('fontFamily.sans');
-}
-
 /* Cloud Animation Styles */
 .cloud-container {
   position: absolute;
