@@ -55,18 +55,18 @@ export function ProjectCard({
           </div>
         </div>
         <p className="text-xs text-neutral-600">{description}</p>
+        <div className="text-[10px] text-neutral-500 space-y-1">
+          {tags.map(tag => categoryNames[tag]).join(' · ')}
+        </div>
         <div className="flex flex-wrap gap-1">
-          {tags.map((tag, index) => (
+          {categories.map((cat, index) => (
             <span
               key={index}
-              className="text-xs px-1 py-1 bg-neutral-100 rounded-full text-neutral-600"
+              className="text-[10px] px-2 py-1 bg-neutral-100 rounded-full text-neutral-600"
             >
-              {tag}
+              {cat}
             </span>
           ))}
-        </div>
-        <div className="text-xs text-neutral-500 space-y-1">
-          {categories.map(cat => categoryNames[cat]).join(' · ')}
         </div>
       </div>
     </div>

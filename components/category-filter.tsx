@@ -2,26 +2,26 @@
 
 const categories = [
   { id: 'all', label: 'All' },
-  { id: 'game', label: 'Game Development' },
+  { id: 'game', label: 'Game Dev' },
   { id: 'newmedia', label: 'New Media Art' },
   { id: 'ai', label: 'GenAI' },
   { id: 'technical', label: 'Technical Art' },
-  { id: 'web', label: 'Web Development' },
-  { id: 'vr', label: 'VR Development' },
+  { id: 'web', label: 'Web Dev' },
+  { id: 'vr', label: 'VR Dev' },
   { id: 'arduino', label: 'Arduino' },
-  { id: 'installation', label: 'Interactive Installation' },
+  { id: 'installation', label: 'Installation' },
 ]
 
 // Create a mapping for category full names
 export const categoryNames: { [key: string]: string } = {
-  'game': 'Game Development',
+  'game': 'Game Dev',
   'newmedia': 'New Media Art',
   'ai':'GenAI',
   'arduino': 'Arduino',
-  'vr': 'VR Development',
+  'vr': 'VR Dev',
   'technical': 'Technical Art',
-  'web': 'Web Development',
-  'installation': 'Interactive Installation',
+  'web': 'Web Dev',
+  'installation': 'Installation',
 }
 
 interface CategoryFilterProps {
