@@ -40,9 +40,6 @@ export function ProjectCard({
       <div className="p-4 space-y-2">
         <div className="flex justify-between items-start">
           <div>
-            <div className="text-xs text-neutral-500 space-y-1">
-              {categories.map(cat => categoryNames[cat]).join(' · ')}
-            </div>
             <Link href={href} className="hover:text-accent transition-colors font-mono font-medium text-primary">
               {title}
             </Link>
@@ -58,15 +55,18 @@ export function ProjectCard({
           </div>
         </div>
         <p className="text-xs text-neutral-600">{description}</p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1">
           {tags.map((tag, index) => (
-            <span 
+            <span
               key={index}
-              className="text-xs px-2 py-1 bg-neutral-100 rounded-full text-neutral-600"
+              className="text-xs px-1 py-1 bg-neutral-100 rounded-full text-neutral-600"
             >
               {tag}
             </span>
           ))}
+        </div>
+        <div className="text-xs text-neutral-500 space-y-1">
+          {categories.map(cat => categoryNames[cat]).join(' · ')}
         </div>
       </div>
     </div>
