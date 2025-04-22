@@ -11,7 +11,7 @@ const inter = Inter({
 const sora = Sora({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-urbanist',
+  variable: '--font-sora',
 });
 
 export const metadata: Metadata = {
