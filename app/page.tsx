@@ -15,13 +15,12 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     title: "BEING",
-    description:
-      "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
+    description: "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
     image: "./projects/being-cover.png",
     categories: ["vr", "game", "arduino"],
     year: "2022",
-    tags: ["VR", "Unity", "Arduino", "Wearable Devices", "Game"],
-    href: "/being",
+    tags: ["VR", "Unity","Wearable Devices"],
+    href: "/being"
   },
   {
     title: "Cosmic Resonator",
@@ -30,7 +29,7 @@ const projects = [
     image: "./projects/cosmic-resonator-cover.jpg",
     categories: ["installation", "game", "arduino"],
     year: "2023",
-    tags: ["Unity", "Arduino", "Physical Interaction", "Custom Sensors"],
+    tags: ["Unity", "Physical Computing", "Custom Sensors"],
     href: "/cosmic-resonator",
   },
   {
@@ -40,7 +39,7 @@ const projects = [
     image: "./projects/stellar-surfer/cover.png", 
     categories: ["game", "installation", "technical", "arduino"],
     year: "2024",
-    tags: ["Unity", "Arduino", "Embodied Interaction"],
+    tags: ["Unity", "Embodied Interaction"],
     href: "/stellar-surfer",
   },
   {
@@ -50,7 +49,7 @@ const projects = [
     image: './projects/babel/cover.png',
     categories: ["installation", "technical", "newmedia"],
     year: "2024",
-    tags: ["Unity", "GenAI", "ComfyUI", "Shader", "Interactive Art"],
+    tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
     href: "/babel-reconstruction",
   },
   {

@@ -33,7 +33,7 @@ const mainProjects = [
     image: "./projects/cosmic-resonator-cover.jpg",
     categories: ["installation", "game", "arduino"],
     year: "2023",
-    tags: ["Unity","Physical Interaction", "Custom Sensors"],
+    tags: ["Unity","Physical Computing", "Custom Sensors"],
     href: "/cosmic-resonator"
   },
   {
