@@ -75,6 +75,15 @@ const mainProjects = [
 
 const simpleProjects = [
   {
+    title: "Meowtive AI",
+    description: "Contextual Cozy Game AI Agent Behaviour System, made during Supercell x Junction Hackathon 2025, top 5 finalist",
+    image:  './projects/others/moewtive_ai_cover.png',
+    categories: ["ai","game","technical"],
+    year: "2025",
+    tags: ["Unity", "GenAI", "AI Agent"],
+    demoLink: "https://eu.junctionplatform.com/dashboard/event/gamejam-2025",
+  },
+  {
     title: "Jiayi's Protfolio Website 2.0",
     description: "The first time I challenged myself using React and Next.js with the help of GenAI coding",
     image:  './projects/others/web2_cover.png',
