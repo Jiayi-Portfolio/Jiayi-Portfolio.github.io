@@ -77,7 +77,7 @@ const simpleProjects = [
   {
     title: "Meowtive AI",
     description: "Contextual Cozy Game AI Agent Behaviour System, made during Supercell x Junction Hackathon 2025, top 5 finalist",
-    image:  './projects/others/moewtive_ai_cover.png',
+    image:  './projects/others/meowtive_ai_cover.png',
     categories: ["ai","game","technical"],
     year: "2025",
     tags: ["Unity", "GenAI", "AI Agent"],
