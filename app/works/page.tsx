@@ -9,10 +9,19 @@ import { HomeBackground } from '@/components/home-background'
 
 const mainProjects = [
   {
+    title: "Symbiotic Voxel",
+    description: "A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
+    image: "/projects/symbiotic-voxel/cover.png",
+    categories: ["game", "ai", "technical"],
+    year: "2025",
+    tags: ["Unity","GenAI","Python","Game","HCI"],
+    href: "/symbiotic-voxel"
+  },
+  {
     title: "Stellar Surfer",
     description:
       "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
-    image: "./projects/stellar-surfer/cover.png", 
+    image: "/projects/stellar-surfer/cover.png", 
     categories: ["game", "installation", "technical", "arduino"],
     year: "2024",
     tags: ["Unity", "Arduino", "Embodied Interaction"],
@@ -21,7 +30,7 @@ const mainProjects = [
   {
     title: "Babel Reconstruction",
     description: "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
-    image: './projects/babel/cover.png',
+    image: "/projects/babel/cover.png",
     categories: ["ai","installation", "technical", "newmedia"],
     year: "2024",
     tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
@@ -30,7 +39,7 @@ const mainProjects = [
   {
     title: "Cosmic Resonator",
     description: "Physical Computing Game, made by Unity & Arduino",
-    image: "./projects/cosmic-resonator-cover.jpg",
+    image: "/projects/cosmic-resonator-cover.jpg",
     categories: ["installation", "game", "arduino"],
     year: "2023",
     tags: ["Unity","Physical Computing", "Custom Sensors"],
@@ -39,7 +48,7 @@ const mainProjects = [
   {
     title: "BEING",
     description: "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
-    image: "./projects/being-cover.png",
+    image: "/projects/being-cover.png",
     categories: ["vr", "game", "arduino"],
     year: "2022",
     tags: ["VR", "Unity","Wearable Devices"],
@@ -48,7 +57,7 @@ const mainProjects = [
   {
     title: "Fungi City",
     description: "A digital art project using neural models and AI to simulate high-density urban living inspired by microbial colonies and subtropical residential areas.",
-    image: './projects/fungi-city/cover.jpg',
+    image: "/projects/fungi-city/cover.jpg",
     categories: ["ai","technical", "newmedia"],
     year: "2022",
     tags: ["AIGC", "GenAI", "Unity", "Houdini"],
@@ -56,7 +65,7 @@ const mainProjects = [
   {
     title: "MOAI",
     description: "A puzzle game set in the year 2999, exploring themes of posthumanism, design fiction, and the ruins of human civilization.",
-    image: "./projects/moai-cover.png",
+    image: "/projects/moai-cover.png",
     categories: ["game", "technical"],
     year: "2022",
     tags: ["Unity", "Narrative", "Posthumanism", "Weirdcore"],
@@ -65,7 +74,7 @@ const mainProjects = [
   {
     title: "Moon Rover 2035",
     description: "A realistic lunar driving simulator designed as an educational game to immerse players in lunar exploration and aerospace science.",
-    image: './projects/moon-rover/cover.jpg',
+    image: "/projects/moon-rover/cover.jpg",
     categories: ["game", "technical"],
     year: "2021",
     tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls"],
@@ -75,9 +84,18 @@ const mainProjects = [
 
 const simpleProjects = [
   {
+    title: "AI-Assistant-for-MARITIME-PILOT",
+    description: "Web demo to test three AI roles collaborating with a human to complete a maritime report via chat and voice.",
+    image:  '/projects/others/maritime_cover.png',
+    categories: ["ai","web","technical"],
+    year: "2025",
+    tags: ["Full Stack", "AI Agent", "Web"],
+    demoLink: "https://github.com/JiayiLi18/AI-Assistant-for-MARITIME-PILOT",
+  },
+  {
     title: "Meowtive AI",
     description: "Contextual Cozy Game AI Agent Behaviour System, made during Supercell x Junction Hackathon 2025, top 5 finalist",
-    image:  './projects/others/meowtive_ai_cover.png',
+    image:  '/projects/others/meowtive_ai_cover.png',
     categories: ["ai","game","technical"],
     year: "2025",
     tags: ["Unity", "GenAI", "AI Agent"],
@@ -86,7 +104,7 @@ const simpleProjects = [
   {
     title: "Jiayi's Protfolio Website 2.0",
     description: "The first time I challenged myself using React and Next.js with the help of GenAI coding",
-    image:  './projects/others/web2_cover.png',
+    image:  '/projects/others/web2_cover.png',
     categories: ["ai","web","newmedia"],
     year: "2025",
     tags: ["Full Stack", "React","Next.js","GenAI"],
@@ -95,7 +113,7 @@ const simpleProjects = [
   {
     title: "LEGO Magic Wand",
     description: "An interactive installation where users build their own LEGO wands, then wave them to cast digital spells in real time using motion tracking and particle effects.",
-    image: './projects/others/lego_wand_cover.png',
+    image: '/projects/others/lego_wand_cover.png',
     categories: ["installation", "game", "newmedia"],
     year: "2024",
     tags: ["Unity", "LEGO", "Motion Tracking"],
@@ -104,7 +122,7 @@ const simpleProjects = [
   {
     title: "Monster Cleaning Inc",
     description: "After nasty battles, these monsters need a good scrub. It's up to you to clean them up quickly and get them ready!",
-    image: './projects/others/monster-inc-cover.gif',
+    image: '/projects/others/monster-inc-cover.gif',
     categories: ["game", "technical"],
     year: "2024",
     tags: ["Game Jam","Unity", "VFX"],
@@ -113,7 +131,7 @@ const simpleProjects = [
   {
     title: "Jiayi's Protfolio Website 1.0",
     description: "It's my first time building my own website from scratch, purely handmade :)",
-    image:  './projects/others/web_cover_1.png',
+    image:  '/projects/others/web_cover_1.png',
     categories: ["web","newmedia"],
     year: "2024",
     tags: ["JavaScript","Html & CSS"],
@@ -122,7 +140,7 @@ const simpleProjects = [
   {
     title: "Cat Impact",
     description: "It's a game of finding your runaway cat. All kinds of accidents happen along the way!",
-    image:  './projects/others/cat_impact_cover_1.png',
+    image:  '/projects/others/cat_impact_cover_1.png',
     categories: ["game"],
     year: "2024",
     tags: ["Game Jam","Unity"],
@@ -131,7 +149,7 @@ const simpleProjects = [
   {
     title: "Crossing The Liminal",
     description: "Our poor doll is missing in a liminal back room where some walls are coming torward it. The only choice to survive is to get into the darkness through the door.",
-    image: './projects/others/crossing_liminal_cover_1.png',
+    image: '/projects/others/crossing_liminal_cover_1.png',
     categories: ["game"],
     year: "2023",
     tags: ["Game Jam","Unity"],
@@ -140,7 +158,7 @@ const simpleProjects = [
   {
     title: "Meet Your New Face",
     description: "Audio-visual work embeded with real-time GenAI images",
-    image:  './projects/others/face_cover_1.png',
+    image:  '/projects/others/face_cover_1.png',
     categories: ["ai","newmedia"],
     year: "2023",
     tags: ["Audiovisual","TouchDesigner", "StableDiffusion"],
@@ -149,7 +167,7 @@ const simpleProjects = [
   {
     title: "Herstory of Nora",
     description: "Open-world Single Player Action RPG demo",
-    image: './projects/others/nora_cover_1.jpg',
+    image: '/projects/others/nora_cover_1.jpg',
     categories: ["game"],
     year: "2023",
     tags: ["Unity", "3D Art", "Level Design"],
@@ -158,7 +176,7 @@ const simpleProjects = [
   {
     title: "Gravity Odyssey",
     description: "A space game based on the prototype of the Interstellar story",
-    image: './projects/others/odyssey_cover_1.png',
+    image: '/projects/others/odyssey_cover_1.png',
     categories: ["game"],
     year: "2023",
     tags: ["Game Jam","Unity","UI Design"],
@@ -167,7 +185,7 @@ const simpleProjects = [
   {
     title: "It's going to be LATE!",
     description: "A local two player confrontation game between the staff and the boss.",
-    image: './projects/others/ItsGoingToBeLate_cover_1.png',
+    image: '/projects/others/ItsGoingToBeLate_cover_1.png',
     categories: ["game"],
     year: "2022",
     tags: ["Game Jam","Unity", "2D Art"],

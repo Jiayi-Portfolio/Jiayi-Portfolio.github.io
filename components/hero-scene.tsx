@@ -14,7 +14,7 @@ export function HeroScene() {
       <AnimatePresence>
         {isClient && (
           <div className="w-full pointer-events-auto flex items-start mx-auto font-mono">
-            <div className="text-left">
+            <div className="text-left space-y-3">
               <motion.div
                 className="relative"
                 initial={{ opacity: 0, y: 50 }}
@@ -22,17 +22,16 @@ export function HeroScene() {
                 transition={{ duration: 0.8 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <h1 className="text-7xl font-light"
-                >
+                <h1 className="text-5xl font-light">
                   <span className="text-accent px-2 box-decoration-clone">
-                    JIAYI LI
+                    JIAYI = Coding + Art + Making
                   </span>
                 </h1>
               </motion.div>
               <p className="text-xl font-normal">
                 <span className="text-accent px-2 pb-2 box-decoration-clone">
                   CREATIVE TECHNOLOGIST •
-                  INTERACTIVE PLAY DESIGNER</span>
+                  INTERACTION DESIGNER</span>
               </p>
             </div>
           </div>

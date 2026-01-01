@@ -14,25 +14,25 @@ const projectData = {
     "Integration - Wearable Device Signal Processing with VR Gameplay"
   ],
   videoUrl: "https://www.youtube.com/embed/xd1qXS5Mfok?si=VLhUbFOaEIP7IjbS",
-  images: ["./projects/being/1.png",
-    "./projects/being/creatures.png",
+  images: ["/projects/being/1.png",
+    "/projects/being/creatures.png",
 
-    "./projects/being/2.png",
-    "./projects/being/3.png",
-    "./projects/being/4.png",
+    "/projects/being/2.png",
+    "/projects/being/3.png",
+    "/projects/being/4.png",
 
-    "./projects/being/prototypingPlay1.png",
-    "./projects/being/prototypingPlay2.png",],
+    "/projects/being/prototypingPlay1.png",
+    "/projects/being/prototypingPlay2.png",],
   imagesWithDescriptions: [
     {
-      image: "./projects/being/gameplayFeature.png",
+      image: "/projects/being/gameplayFeature.png",
       description: "Since invertebrates are the most distant branch of animals from humans in the evolutionary tree, their perception is extremely different from all aspects. Therefore many interesting results will arise when humans try to understand the feelings of invertebrates. The senses are our intuitive way of perceiving the world. If we can feel the invertebrate type of senses, we may be able to reconstruct a different reality through empathy on feelings."},
     {
-      image: "./projects/being/prototyping.png",
+      image: "/projects/being/prototyping.png",
       description: ""
     },
     {
-      image: "./projects/being/gameProcess.png",
+      image: "/projects/being/gameProcess.png",
       description: ""
     }
   ]

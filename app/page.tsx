@@ -14,9 +14,19 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
+    title: "Symbiotic Voxel",
+    description:
+      "A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
+    image: "/projects/symbiotic-voxel/cover.png",
+    categories: ["game", "ai", "technical"],
+    year: "2025",
+    tags: ["Unity","GenAI","Python","Game","HCI"],
+    href: "/symbiotic-voxel"
+  },
+  {
     title: "BEING",
     description: "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
-    image: "./projects/being-cover.png",
+    image: "/projects/being-cover.png",
     categories: ["vr", "game", "arduino"],
     year: "2022",
     tags: ["VR", "Unity","Wearable Devices"],
@@ -26,7 +36,7 @@ const projects = [
     title: "Cosmic Resonator",
     description:
       "An embodied physical computing game inspired by the Himalayan singing bowl, combining rhythm-based gameplay with Arduino-driven xylophone interaction.",
-    image: "./projects/cosmic-resonator-cover.jpg",
+    image: "/projects/cosmic-resonator-cover.jpg",
     categories: ["installation", "game", "arduino"],
     year: "2023",
     tags: ["Unity", "Physical Computing", "Custom Sensors"],
@@ -36,7 +46,7 @@ const projects = [
     title: "Stellar Surfer",
     description:
       "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
-    image: "./projects/stellar-surfer/cover.png", 
+    image: "/projects/stellar-surfer/cover.png", 
     categories: ["game", "installation", "technical", "arduino"],
     year: "2024",
     tags: ["Unity", "Embodied Interaction"],
@@ -46,7 +56,7 @@ const projects = [
     title: "Babel Reconstruction",
     description:
       "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
-    image: './projects/babel/cover.png',
+    image: "/projects/babel/cover.png",
     categories: ["installation", "technical", "newmedia"],
     year: "2024",
     tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
@@ -56,7 +66,7 @@ const projects = [
     title: "Fungi City",
     description:
       "A digital art project using neural models and AI to simulate high-density urban living inspired by microbial colonies and subtropical residential areas.",
-    image: './projects/fungi-city/cover.jpg',
+    image: "/projects/fungi-city/cover.jpg",
     categories: ["technical", "newmedia"],
     year: "2022",
     tags: ["AIGC", "GenAI", "Unity", "Houdini"],
@@ -109,10 +119,10 @@ export default function Home() {
       <main className="relative z-10 bg-white text-black">
 
         {/* Featured Projects */}
-        <section className="py-32 px-4">
+        <section className="py-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-center text-2xl font-mono mb-16 text-primary">Featured Projects</h2>
-            <div className="grid md:grid-cols-3 gap-12 mb-16">
+            <h2 className="text-center text-2xl font-mono mb-8 text-primary">Featured Projects</h2>
+            <div className="grid md:grid-cols-3 gap-12 mb-8">
               {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
@@ -120,7 +130,7 @@ export default function Home() {
             </div>
 
             {/* Add More Projects Button */}
-            <div className="mt-16 text-center">
+            <div className="mt-8 text-center">
               <Link
                 href="/works"
                 className="font-mono items-center text-primary"
@@ -133,14 +143,14 @@ export default function Home() {
         </section>
 
         {/* About Teaser */}
-        <section className="py-32 px-4 bg-white">
-          <div className="max-w-2xl mx-auto text-center space-y-8">
-            <h2 className="text-2xl font-mono text-primary">About Me</h2>
-            <p className="text-neutral-600">
-              With a background in both digital art and game design, I create immersive experiences
-              that challenge the boundaries between physical and digital realms. My work explores
-              the intersection of play, technology, and human interaction.
-            </p>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-3xl text-center mx-auto space-y-8">
+            <h2 className="text-lg font-mono text-primary">
+             Designing Play that Feels Alive.<br />
+             I turn wild ideas into playable realities, <br />
+             jumping back and forth between creative design and technical engineering.<br />
+             Check out my works to see what I&#39;ve been up to!
+             </h2>
             <div>
               <Link
                 href="/about"
@@ -155,7 +165,7 @@ export default function Home() {
         </section>
 
         {/* Get in Touch Section - Updated for consistency */}
-        <section className="py-32 px-4 bg-white">
+        <section className="py-16 px-4 bg-white">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h2 className="text-2xl font-mono text-primary">Get in Touch</h2>
             <div className="flex flex-col items-center justify-center md:flex-row gap-8">

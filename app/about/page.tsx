@@ -11,34 +11,56 @@ import Image from 'next/image'
 
 // Add qualitative skills first
 const qualitativeSkills = {
+  'AI Engineering': [
+    'AI Agents Development',
+    "Prompt Engineering",
+    'Procedural AIGC Tools',
+  ],
+  'Design': [
+    'Interactive Play Design',
+    'UI/UX Design',
+    'Collaborative Workflows',
+    'User Research'
+  ],
+  'Development': [
+    'Full-Stack Development',
+    'Game Development',
+    'VR/MR Development',
+    'Agile Development',
+    'Custom Tools Development'
+  ],
   'Technical Art': [
     'Shader Development',
     'Compute Shader Applications',
     'Particle & VFX',
-    '2D/3D Art Integration'
-  ],
-  'Design & Development': [
-    'Interactive Play Design',
-    'VR/MR Development',
-    'Agile Development',
-    'Collaborative Workflows',
-    'User Research'
-  ],
-  'AI Engineering': [
-    'LLM Fine-Tuning',
-    'ComfyUI Workflows',
-    'Procedural AIGC Tools',
-    'Basic AI Agents'
+    '2D/3D Art Integration',
+    'Generative Art'
   ]
 }
 
 // Modified skillsWithLevels with new category
 const skillsWithLevels = {
   'Development Tools': [
-    { name: 'Unity', level: 95 },
+    { name: 'Unity', level: 100 },
     { name: 'Unreal Engine', level: 70 },
     { name: 'TouchDesigner', level: 60 },
     { name: 'Arduino', level: 70 }
+  ],
+  'Coding': [
+    { name: 'C#', level: 95 },
+    { name: 'Python', level: 90 },
+    { name: 'TypeScript', level: 70 },
+    { name: 'JavaScript', level: 70 },
+    { name: 'React', level: 70 },
+    { name: 'HTML/CSS', level: 80 },
+    { name: 'GLSL', level: 60 }
+  ],
+  'GenAI': [
+    { name: 'Comfy UI', level: 80 },
+    { name: 'NanoBanana,Midjourney', level: 80 },
+    { name: 'Meshy, Tripo3D', level: 70 },
+    { name: 'SUNO', level: 75 },
+    { name: 'Veo 3', level: 60 }
   ],
   '3D Modeling & VFX': [
     { name: 'Blender', level: 80 },
@@ -48,27 +70,16 @@ const skillsWithLevels = {
     { name: 'Substance Designer', level: 60 },
     { name: 'Rhino', level: 70 },
   ],
-  'Coding': [
-    { name: 'C#', level: 95 },
-    { name: 'Python', level: 75 },
-    { name: 'GLSL', level: 60 },
-    { name: 'TypeScript', level: 70 },
-    { name: 'JavaScript', level: 70 },
-    { name: 'React', level: 70 },
-    { name: 'HTML/CSS', level: 80 }
-  ],
   'Graphic & Concept': [
-    { name: 'Comfy UI', level: 75 },
     { name: 'Figma', level: 95 },
-    { name: 'Stable Diffusion', level: 75 },
+    { name: 'Procreate', level: 80 },
     { name: 'Photoshop', level: 80 },
     { name: 'Illustrator', level: 70 },
     { name: 'Premiere', level: 75 },
-
   ]
 }
 
-const experiences = [
+{/*const experiences = [
   {
     title: 'Interactive Play Design Intern',
     company: 'The LEGO Group',
@@ -112,7 +123,6 @@ const experiences = [
     ]
   }
 ]
-
 const education = [
   {
     degree: 'Master of Arts in New Media',
@@ -129,14 +139,16 @@ const education = [
     focus: 'Minor in Cross-Disciplinary Experimental Program of Architecture'
   }
 ]
+*/}
 
 export default function About() {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
   const photos = [
-    './projects/profile0.jpg',
-    './projects/profile2.jpg',
-    './projects/profile1.jpg',
-    './projects/profile3.jpg'
+    '/projects/profile1.jpg',
+    '/projects/profile0.jpg',
+    '/projects/profile2.jpg',
+    '/projects/profile3.jpg',
+    '/projects/profile4.jpg'
   ]
 
   const nextPhoto = () => {
@@ -153,14 +165,14 @@ export default function About() {
       <div className="text-primary"><ScrollIndicator /></div>
       <main className=" text-black w-full">
         {/* Bio and Photo Carousel */}
-        <section className="h-full md:h-screen max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center p-8 pt-16 md:pt-0">
+        <section className="h-full md:h-screen max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-center p-8 pt-16 md:pt-0">
           <div className="w-full md:w-1/3 flex justify-center mb-0">
             <div className="relative">
               <Image
                 src={photos[currentPhotoIndex]}
                 alt="Jiayi Li"
-                width={420}
-                height={420}
+                width={520}
+                height={520}
                 className="rounded-lg shadow-lg max-w-full h-auto"
               />
               <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-2 ">
@@ -184,12 +196,19 @@ export default function About() {
           <div className="w-full md:w-2/3 space-y-6 md:ml-12 text-primary">
             <p>
               <span className="font-mono text-sm">
-                Hi, I&#39;m Jiayi. I create engaging digital interactions and new media art with my interdisciplinary background. <br />
-                I design and develop games and arts of various forms. Every project adds a unique piece of my creativity and gets me ready for the next new idea—whether it&#39;s a video game or a playful installation.<br />
-                I also have extensive experience using generative AI to create efficiently, as I&#39;m always curious about new technologies in creative fields.<br />
-                Beyond my work, I like hiking, needle felting, drawing, swimming and of course, playing games.<br />
-                If you&#39;re interested about my experience...Let&#39;s connect XD!
-                </span>
+                Hi, I&#39;m Jiayi.
+                I build things that are fun to touch and play with. <br />
+                <br />
+                As an Interactive Play Designer and Creative Technologist,
+                I combine the technical rigor of a developer with the empathy of a UX designer.
+                My toolkit is spanning from Unity development, AI engineering, 3D modeling, and UI design to hardware prototyping.
+                but my focus is singular: creating seamless, immersive experiences.<br />
+                <br />
+                I thrive on rapid prototyping. Whether I&#39;m scripting intelligent agents at a research lab or crafting playful interactions at LEGO,
+                I use my full-stack capabilities to validate ideas fast and ensure they feel right in the playe&#39;s hands. <br />
+                <br />
+                Beyond work: Bouldering, Climbing, Muay Thai, and Making.
+              </span>
             </p>
 
             <div className="font-mono flex flex-wrap gap-4">
@@ -227,15 +246,14 @@ export default function About() {
         <div className="bg-white mx-0 px-4 py-24 space-y-24">
           {/* Skills with Visualization */}
           <section className="space-y-6 flex flex-col items-center">
-            <h2 className="font-mono text-2xl font-normal text-center text-primary">Skills & Technologies</h2>
+            <h2 className="font-mono text-2xl font-normal text-center text-primary">My Toolkit</h2>
             <div className="bg-primary/5 rounded-lg p-8 text-center max-w-5xl mx-auto">
               <p className="text-sm font-light text-neutral-600 italic">
-                I&#39;m not a polymath - just someone who keeps tripping over problems,
-                then can&#39;t stop building better shovels to dig through them ;)
+              I don&#39;t collect skills. I build shovels to dig through problems.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl text-center">
+            <div className="mx-auto grid w-11/12 sm:w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl text-center">
               {Object.entries(qualitativeSkills).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
                   <h3 className="text-sm font-mono font-normal mb-4 text-primary">{category}</h3>
@@ -250,7 +268,7 @@ export default function About() {
               ))}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl">
+            <div className="mx-auto grid w-11/12 sm:w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-5xl">
               {Object.entries(skillsWithLevels).map(([category, skills]) => (
                 <div key={category} className="bg-white shadow p-6">
                   <h3 className="font-mono text-sm font-normal mb-4 text-primary">{category}</h3>
@@ -272,37 +290,10 @@ export default function About() {
             </div>
           </section>
 
-          {/* Work Experience - New Section */}
-          <section className="space-y-6">
-            <h2 className="font-mono text-2xl text-primary font-normal text-center">Work Experience</h2>
-            <div className="max-w-3xl mx-auto space-y-8">
-              {experiences.map((exp, index) => (
-                <div key={index} className="bg-white shadow p-6 text-sm">
-                  <h3 className="font-normal">{exp.title}</h3>
-                  <p className="text-neutral-600 mb-2">{exp.company} | {exp.duration} | {exp.location}</p>
-                  <ul className="text-xs list-disc list-inside text-neutral-600">
-                    {exp.details.map((detail, i) => (
-                      <li key={i}>{detail}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
+          {/* Work Experience - 不需要了感兴趣的人会去看领英 */}
 
-          {/* Education - New Section */}
-          <section className="bg-white space-y-6">
-            <h2 className="font-mono text-2xl text-primary font-normal text-center">Education</h2>
-            <div className="max-w-3xl mx-auto space-y-8 text-sm">
-              {education.map((edu, index) => (
-                <div key={index} className="bg-white shadow p-6">
-                  <h3 className="font-normal">{edu.degree}</h3>
-                  <p className="text-neutral-600">{edu.school} | {edu.duration} | {edu.location}</p>
-                  <p className="text-xs text-neutral-600 mt-2">{edu.focus}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+
+          {/* Education -同上*/}
 
           {/* Contact Form*/}
           <section className="bg-white space-y-6">

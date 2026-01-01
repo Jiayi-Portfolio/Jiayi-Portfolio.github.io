@@ -17,21 +17,31 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "1",
+    id: "0",
     title: "Babel Reconstruction",
     description:
-      "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
-    image: './projects/babel/cover.png',
+    "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
+    image: "/projects/babel/cover.png",
     year: "2024",
     tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
     href: "/babel-reconstruction",
+  },
+  {
+    id: "1",
+    title: "Symbiotic Voxel",
+    description:
+      "A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
+    image: "/projects/symbiotic-voxel/cover.png",
+    year: "2025",
+    tags: ["Unity","GenAI","Python","Game","HCI"],
+    href: "/symbiotic-voxel",
   },
   {
     id: "2",
     title: "BEING",
     description:
       "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
-    image: "./projects/being-cover.png",
+    image: "/projects/being-cover.png",
     year: "2022",
     tags: ["Arduino", "VR", "Unity", "Wearable Devices", "Game"],
     href: "/being"
@@ -41,7 +51,7 @@ const projects: Project[] = [
     title: "Cosmic Resonator",
     description:
       "An embodied physical computing game inspired by the Himalayan singing bowl, combining rhythm-based gameplay with Arduino-driven xylophone interaction.",
-    image: "./projects/cosmic-resonator-cover.jpg",
+    image: "/projects/cosmic-resonator-cover.jpg",
     year: "2023",
     tags: ["Unity", "Arduino", "Physical Interaction", "Custom Sensors"],
     href: "/cosmic-resonator",
@@ -51,7 +61,7 @@ const projects: Project[] = [
     title: "Stellar Surfer",
     description:
       "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
-    image: "./projects/stellar-surfer/cover.png",
+    image: "/projects/stellar-surfer/cover.png",
     year: "2024",
     tags: ["Unity", "Arduino", "Embodied Interaction"],
     href: "/stellar-surfer",
@@ -61,7 +71,7 @@ const projects: Project[] = [
     title: "FUNGI CITY",
     description:
       "An interactive installation exploring biological systems through digital art",
-    image: './projects/fungi-city/cover.jpg',
+    image: "/projects/fungi-city/cover.jpg",
     year: "2022",
     tags: ["Unity", "Houdini", "Interactive Installation"],
     href: "/fungi-city",
@@ -70,12 +80,11 @@ const projects: Project[] = [
     id: "6",
     title: "Moon Rover 2035",
     description: "A realistic lunar driving simulator designed as an educational game to immerse players in lunar exploration and aerospace science.",
-    image: './projects/moon-rover/cover.jpg',
+    image: "/projects/moon-rover/cover.jpg",
     year: "2021",
     tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls"],
     href: "/moon-rover"
   },
-
 ]
 
 const ProjectOverlay = ({ project }: { project: Project }) => {
@@ -171,6 +180,7 @@ export function ProjectCarousel() {
                 fill
                 className="object-cover"
                 priority
+                unoptimized
               />
             </div>
           </div>

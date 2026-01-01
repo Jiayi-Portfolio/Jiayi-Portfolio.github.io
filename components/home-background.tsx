@@ -18,20 +18,22 @@ export function HomeBackground() {
      <div className="cloud-container cloud-slow">
      <div className="cloud-image left-[5%] top-[15%]">
        <Image
-         src="./projects/cloud.png"
+         src="/projects/cloud.png"
          alt="Cloud"
          width={1080}
          height={550}
          className="opacity-60 w-full h-auto"
+         unoptimized
        />
      </div>
      <div className="cloud-image left-[60%] top-[10%]">
        <Image
-         src="./projects/cloud.png"
+         src="/projects/cloud.png"
          alt="Cloud"
          width={750}
          height={320}
          className="opacity-70 w-full h-auto"
+         unoptimized
        />
      </div>
    </div>
@@ -40,20 +42,22 @@ export function HomeBackground() {
    <div className="cloud-container cloud-medium">
      <div className="cloud-image-blur left-[30%] top-[40%]">
        <Image
-         src="./projects/cloud.png"
+         src="/projects/cloud.png"
          alt="Cloud"
          width={1080}
          height={550}
          className="w-full h-auto"
+         unoptimized
        />
      </div>
      <div className="cloud-image-blur left-[80%] top-[60%]">
        <Image
-         src="./projects/cloud.png"
+         src="/projects/cloud.png"
          alt="Cloud"
          width={750}
          height={320}
          className="opacity-80 w-full h-auto"
+         unoptimized
        />
      </div>
    </div>

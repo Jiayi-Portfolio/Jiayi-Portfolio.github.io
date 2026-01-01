@@ -34,6 +34,7 @@ export function ProjectCard({
             height={225}
             className="object-cover h-full w-full transition-all duration-500 
               group-hover:scale-105"
+            unoptimized
           />
         </Link>
       </div>

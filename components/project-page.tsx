@@ -58,6 +58,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                             fill
                             className="object-cover"
                             priority
+                            unoptimized
                         />
                     </div>
                 </section>
@@ -67,13 +68,13 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                     <div className="space-y-6">
                         <h1 className="text-4xl font-mono font-light text-primary">{projectData.title}</h1>
                         <h2 className="text-xl font-mono font-light text-neutral-600">{projectData.subtitle}</h2>
-                        <p className="text-neutral-600 text-xs leading-relaxed">
+                        <p className="text-neutral-500 text-s leading-relaxed">
                             {projectData.description}
                         </p>
                     </div>
                     <div className="space-y-12">
                         <div>
-                            <h2 className="text-xl font-mono text-primary mb-4">MY CONTRIBUTIONS</h2>
+                            <h2 className="text-xl font-mono text-primary mb-4">WHAT I DID</h2>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
                                 {projectData.contributions.map((contribution, index) => (
                                     <li
@@ -89,7 +90,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                             </ul>
                         </div>
                         <div>
-                            <h2 className="text-xl font-mono text-primary mb-4">TOOLS</h2>
+                            <h2 className="text-xl font-mono text-primary mb-4">TOOLS &amp; TECH</h2>
                             <div className="flex flex-wrap gap-2">
                                 {projectData.tools.map((tool, index) => (
                                     <span
@@ -138,6 +139,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                                                     width={1080}
                                                     height={300}
                                                     className="object-cover w-10/12"
+                                                    unoptimized
                                                 />
                                             </div>
                                         )}
@@ -164,6 +166,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                                     width={500}
                                     height={300}
                                     className="object-contain"
+                                    unoptimized
                                 />
                             </div>
                         ))}
@@ -202,6 +205,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                                 alt={`Image ${currentImageIndex + 1}`}
                                 fill
                                 className="object-contain"
+                                unoptimized
                             />
                         </div>
 
