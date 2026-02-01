@@ -6,6 +6,36 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from "next/image";
 import Link from "next/link";
 
+const URL_REGEX = /(https?:\/\/\S+)/g;
+
+function renderTextWithLinks(text: string) {
+    const parts = text.split(URL_REGEX);
+
+    return parts.map((part, i) => {
+        const isUrl = part.startsWith("http://") || part.startsWith("https://");
+        if (!isUrl) return part;
+
+        // Trim common trailing punctuation so "https://x.y)." doesn't break the URL.
+        const match = part.match(/^(https?:\/\/\S+?)([)\].,;:!?]+)?$/);
+        const href = match?.[1] ?? part;
+        const trailing = match?.[2] ?? "";
+
+        return (
+            <span key={`link-${i}`}>
+                <Link
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-primary break-all"
+                >
+                    {href}
+                </Link>
+                {trailing}
+            </span>
+        );
+    });
+}
+
 // Define the interface for projectData
 interface ProjectData {
     title: string;
@@ -68,8 +98,8 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                     <div className="space-y-6">
                         <h1 className="text-4xl font-mono font-light text-primary">{projectData.title}</h1>
                         <h2 className="text-xl font-mono font-light text-neutral-600">{projectData.subtitle}</h2>
-                        <p className="text-neutral-500 text-s leading-relaxed">
-                            {projectData.description}
+                        <p className="text-neutral-500 text-s leading-relaxed whitespace-pre-line">
+                            {renderTextWithLinks(projectData.description)}
                         </p>
                     </div>
                     <div className="space-y-12">

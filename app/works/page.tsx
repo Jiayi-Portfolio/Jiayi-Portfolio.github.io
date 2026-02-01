@@ -18,6 +18,15 @@ const mainProjects = [
     href: "/symbiotic-voxel"
   },
   {
+    title: "LEGO® SMART Play™",
+    description: "As part of the Creative Play Lab, I prototyped novel gameplay mechanics for the LEGO SMART Brick - a new way to play with LEGO bricks.",
+    image: "/projects/others/smartplay_cover.jpg",
+    categories: ["game", "technical"],
+    year: "2024",
+    tags: ["Toy","HCI","Custom Sensors","Unity","Python"],
+    href: "/lego-smart-play"
+  },
+  {
     title: "Stellar Surfer",
     description:
       "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
@@ -93,7 +102,16 @@ const simpleProjects = [
     demoLink: "https://github.com/JiayiLi18/AI-Assistant-for-MARITIME-PILOT",
   },
   {
-    title: "Meowtive AI",
+    title: "Sketch Brawl - Junction Hackathon 2025",
+    description: "Sketch Brawl is an AI-First doodle battler where anything you draw becomes alive — and fights.Honorary mentioned",
+    image: "/projects/others/sketch_brawl_cover.png",
+    categories: ["game", "ai", "technical"],
+    year: "2025",
+    tags: ["Game Jam", "GenAI"],
+    demoLink: "https://youtu.be/CusbwWmfmY0?si=MXWscSThIC5X7ToP",
+  },
+  {
+    title: "Meowtive AI - Supercell Hackathon 2025",
     description: "Contextual Cozy Game AI Agent Behaviour System, made during Supercell x Junction Hackathon 2025, top 5 finalist",
     image:  '/projects/others/meowtive_ai_cover.png',
     categories: ["ai","game","technical"],

@@ -197,15 +197,15 @@ export default function About() {
             <p>
               <span className="font-mono text-sm">
                 Hi, I&#39;m Jiayi.
-                I build things that are fun to touch and play with. <br />
+                I build things that are fun to play with. <br />
                 <br />
-                As an Interactive Play Designer and Creative Technologist,
-                I combine the technical rigor of a developer with the empathy of a UX designer.
-                My toolkit is spanning from Unity development, AI engineering, 3D modeling, and UI design to hardware prototyping.
-                but my focus is singular: creating seamless, immersive experiences.<br />
+                I combine the technical rigor of a developer with the empathy of a designer. 
+                My toolkit is spanning from Unity development, AI engineering, 3D modeling, 
+                and UI design to hardware prototyping. 
+                But my focus is singular: creating seamless, immersive experiences.<br />
                 <br />
-                I thrive on rapid prototyping. Whether I&#39;m scripting intelligent agents at a research lab or crafting playful interactions at LEGO,
-                I use my full-stack capabilities to validate ideas fast and ensure they feel right in the playe&#39;s hands. <br />
+                I thrive on rapid prototyping. Whether I&#39;m scripting AI agents or crafting playful toy interactions,
+                I use my full-stack capabilities to validate ideas fast and ensure they feel right in the players&#39; hands. <br />
                 <br />
                 Beyond work: Bouldering, Climbing, Muay Thai, and Making.
               </span>

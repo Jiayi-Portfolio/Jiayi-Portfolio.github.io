@@ -38,6 +38,16 @@ const projects: Project[] = [
   },
   {
     id: "2",
+    title: "LEGO® SMART Play™",
+    description:
+      "As part of the Creative Play Lab, I prototyped novel gameplay mechanics for the LEGO SMART Brick - a new way to play with LEGO bricks.",
+    image: "/projects/others/smartplay_cover.jpg",
+    year: "2024",
+    tags: ["Toy","HCI","Custom Sensors","Unity","Python"],
+    href: "/lego-smart-play",
+  },
+  {
+    id: "3",
     title: "BEING",
     description:
       "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
@@ -47,7 +57,7 @@ const projects: Project[] = [
     href: "/being"
   },
   {
-    id: "3",
+    id: "4",
     title: "Cosmic Resonator",
     description:
       "An embodied physical computing game inspired by the Himalayan singing bowl, combining rhythm-based gameplay with Arduino-driven xylophone interaction.",
@@ -57,7 +67,7 @@ const projects: Project[] = [
     href: "/cosmic-resonator",
   },
   {
-    id: "4",
+    id: "5",
     title: "Stellar Surfer",
     description:
       "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
@@ -65,16 +75,6 @@ const projects: Project[] = [
     year: "2024",
     tags: ["Unity", "Arduino", "Embodied Interaction"],
     href: "/stellar-surfer",
-  },
-  {
-    id: "5",
-    title: "FUNGI CITY",
-    description:
-      "An interactive installation exploring biological systems through digital art",
-    image: "/projects/fungi-city/cover.jpg",
-    year: "2022",
-    tags: ["Unity", "Houdini", "Interactive Installation"],
-    href: "/fungi-city",
   },
   {
     id: "6",

@@ -24,6 +24,16 @@ const projects = [
     href: "/symbiotic-voxel"
   },
   {
+    title: "LEGO® SMART Play™",
+    description:
+      "As part of the Creative Play Lab, I prototyped novel gameplay mechanics for the LEGO SMART Brick - a new way to play with LEGO bricks.",
+    image: "/projects/others/smartplay_cover.jpg",
+    categories: ["game", "technical"],
+    year: "2024",
+    tags: ["Toy","HCI","Custom Sensors","Unity","Python"],
+    href: "/lego-smart-play"
+  },
+  {
     title: "BEING",
     description: "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
     image: "/projects/being-cover.png",
@@ -61,17 +71,7 @@ const projects = [
     year: "2024",
     tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
     href: "/babel-reconstruction",
-  },
-  {
-    title: "Fungi City",
-    description:
-      "A digital art project using neural models and AI to simulate high-density urban living inspired by microbial colonies and subtropical residential areas.",
-    image: "/projects/fungi-city/cover.jpg",
-    categories: ["technical", "newmedia"],
-    year: "2022",
-    tags: ["AIGC", "GenAI", "Unity", "Houdini"],
-    href: "/fungi-city",
-  },
+  }
 ];
 
 export default function Home() {
