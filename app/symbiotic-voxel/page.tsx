@@ -6,13 +6,10 @@ const projectData = {
   title: "Symbiotic Voxel",
   subtitle: "Generative AI + Spatial Computing: Symbiotic Voxel",
   description: `An experimental sandbox investigating spatial AI agency within a 3D environment. 
-  
   Unlike passive chatbots, the resident agent "Loom" perceives spatial context and actively collaborates on design tasks. 
   Built on a custom Unity-to-Python pipeline, the system utilizes a two-stage reasoning architecture to negotiate high-level plans before execution. 
   This project prototypes a future where AI evolves from a tool into a grounded, structural partner.
-
   itch.io: https://lijiayii.itch.io/symbiotic-voxels 
-
   Github: https://github.com/JiayiLi18/Symbiotic-Voxels-AI `,
   tools: ["Unity", "Generative AI","Python","LLMs","APIs","ComfyUI","RAG"],
   videoUrl: "https://www.youtube.com/embed/3QZhbYyEkxc?si=4yDP7e2fqmgEgB34", 
