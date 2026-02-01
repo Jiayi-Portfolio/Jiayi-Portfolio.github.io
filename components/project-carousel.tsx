@@ -30,7 +30,7 @@ const projects: Project[] = [
     id: "1",
     title: "Symbiotic Voxel",
     description:
-      "A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
+      "Master's graduation project: A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
     image: "/projects/symbiotic-voxel/cover.png",
     year: "2025",
     tags: ["Unity","GenAI","Python","Game","HCI"],

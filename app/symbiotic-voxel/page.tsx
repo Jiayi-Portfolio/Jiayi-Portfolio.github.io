@@ -9,6 +9,7 @@ const projectData = {
   Unlike passive chatbots, the resident agent "Loom" perceives spatial context and actively collaborates on design tasks. 
   Built on a custom Unity-to-Python pipeline, the system utilizes a two-stage reasoning architecture to negotiate high-level plans before execution. 
   This project prototypes a future where AI evolves from a tool into a grounded, structural partner.
+  This is my master's graduation project. 
   itch.io: https://lijiayii.itch.io/symbiotic-voxels 
   Github: https://github.com/JiayiLi18/Symbiotic-Voxels-AI `,
   tools: ["Unity", "Generative AI","Python","LLMs","APIs","ComfyUI","RAG"],
