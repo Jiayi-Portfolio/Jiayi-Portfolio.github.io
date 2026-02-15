@@ -93,6 +93,15 @@ const mainProjects = [
 
 const simpleProjects = [
   {
+    title: "Infinite Dungeon Master",
+    description: "Supercell Global AI Game Hack Top 5 winner: a roguelike game prototype where GenAI acts as the Dungeon Master, generating encounters in real time as you explore.",
+    image:  '/projects/others/dungeon_cover.jpg',
+    categories: ["ai","game","web","technical"],
+    year: "2026",
+    tags: ["Full Stack", "AI Agent", "Web"],
+    demoLink: "https://github.com/JiayiLi18/infinite-dungeon-master-ai-hackathon",
+  },
+  {
     title: "AI-Assistant-for-MARITIME-PILOT",
     description: "Web demo to test three AI roles collaborating with a human to complete a maritime report via chat and voice.",
     image:  '/projects/others/maritime_cover.png',
@@ -103,7 +112,7 @@ const simpleProjects = [
   },
   {
     title: "Sketch Brawl - Junction Hackathon 2025",
-    description: "Sketch Brawl is an AI-First doodle battler where anything you draw becomes alive — and fights.Honorary mentioned",
+    description: "Sketch Brawl is an AI-powered doodle battler where anything you draw becomes alive — and fights. Honorary mentioned",
     image: "/projects/others/sketch_brawl_cover.png",
     categories: ["game", "ai", "technical"],
     year: "2025",
@@ -117,7 +126,7 @@ const simpleProjects = [
     categories: ["ai","game","technical"],
     year: "2025",
     tags: ["Unity", "GenAI", "AI Agent"],
-    demoLink: "https://eu.junctionplatform.com/dashboard/event/gamejam-2025",
+    demoLink: "https://youtu.be/Z1tQUwK2qn0?si=I-XDoUUWxxH4lObh",
   },
   {
     title: "Jiayi's Protfolio Website 2.0",
