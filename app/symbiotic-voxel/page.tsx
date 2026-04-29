@@ -1,6 +1,7 @@
-import { Nav } from "@/components/nav";
+﻿import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import ProjectPage from "@/components/project-page";
+import type { Metadata } from "next";
 
 const projectData = {
   title: "Symbiotic Voxel",
@@ -37,7 +38,7 @@ const projectData = {
       image: "/projects/symbiotic-voxel/tech.jpg",
       description:
         "Built as a solo full-stack project, the architecture focuses on structured agency. " +
-        "I designed a Two-Stage Reasoning system where the LLM outputs high-level plans as structured JSON data before execution. This ensures the AI acts as a reliable collaborator rather than a black box. This approach—prioritizing visible, structured actions over pure text—aligns with the emerging engineering standards for autonomous agents in complex interfaces.",
+        "I designed a Two-Stage Reasoning system where the LLM outputs high-level plans as structured JSON data before execution. This ensures the AI acts as a reliable collaborator rather than a black box. This approachâ€”prioritizing visible, structured actions over pure textâ€”aligns with the emerging engineering standards for autonomous agents in complex interfaces.",
     },
     {
       image: "/projects/symbiotic-voxel/design.jpg",
@@ -52,12 +53,17 @@ const projectData = {
   ]
 };
 
+export const metadata: Metadata = {
+  title: projectData.title,
+  description: projectData.subtitle,
+};
+
 export default function SingleProjectPage() {
   return (
     <>
       <Nav alwaysLight />
       <ProjectPage projectData={projectData} />
-      <Footer />
+      <Footer color="primary" />
     </>
   );
 }

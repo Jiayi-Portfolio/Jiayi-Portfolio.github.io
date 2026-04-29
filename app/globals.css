@@ -52,4 +52,69 @@ html {
   }
 }
 
+/* Per-letter wave for HeroScene.
+   Sampled at every 5% from y = -16 * sin(2π * t) so motion is a smooth
+   sine: max velocity at zero crossings, zero velocity at extremes.
+   Use linear timing — the curve is encoded by the keyframe samples. */
+@keyframes letter-wave {
+  0%   { transform: translateY(0); }
+  5%   { transform: translateY(-4.94px); }
+  10%  { transform: translateY(-9.41px); }
+  15%  { transform: translateY(-12.94px); }
+  20%  { transform: translateY(-15.22px); }
+  25%  { transform: translateY(-16px); }
+  30%  { transform: translateY(-15.22px); }
+  35%  { transform: translateY(-12.94px); }
+  40%  { transform: translateY(-9.41px); }
+  45%  { transform: translateY(-4.94px); }
+  50%  { transform: translateY(0); }
+  55%  { transform: translateY(4.94px); }
+  60%  { transform: translateY(9.41px); }
+  65%  { transform: translateY(12.94px); }
+  70%  { transform: translateY(15.22px); }
+  75%  { transform: translateY(16px); }
+  80%  { transform: translateY(15.22px); }
+  85%  { transform: translateY(12.94px); }
+  90%  { transform: translateY(9.41px); }
+  95%  { transform: translateY(4.94px); }
+  100% { transform: translateY(0); }
+}
+.animate-letter-wave {
+  animation: letter-wave 3s linear infinite;
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Horizontal marquee for HeroScene (two copies, translate -50% to loop) */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee {
+  animation-name: marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+.animate-marquee-reverse {
+  animation-name: marquee-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+/* Project carousel — continuous horizontal scroll */
+@keyframes carousel-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-carousel-scroll {
+  animation: carousel-scroll 60s linear infinite;
+  will-change: transform;
+}
+
 

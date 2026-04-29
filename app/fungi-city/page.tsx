@@ -1,6 +1,7 @@
-import { Nav } from "@/components/nav";
+﻿import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import ProjectPage from "@/components/project-page";
+import type { Metadata } from "next";
 
 const projectData = {
   title: "Fungi City",
@@ -41,12 +42,17 @@ const projectData = {
   ]
 };
 
+export const metadata: Metadata = {
+  title: projectData.title,
+  description: projectData.subtitle,
+};
+
 export default function SingleProjectPage() {
   return (
     <>
       <Nav alwaysLight />
       <ProjectPage projectData={projectData} />
-      <Footer />
+      <Footer color="primary" />
     </>
   );
 }

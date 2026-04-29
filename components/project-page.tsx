@@ -210,7 +210,7 @@ export default function ProjectPage({ projectData }: { projectData: ProjectData 
                             href="/works"
                             className="font-mono items-center text-primary"
                         >
-                            <Button className="bg-neutral-100 hover:bg-accent transition-color">
+                            <Button variant="sweep" size="lg" className="font-mono">
                                 View Other Projects
                             </Button>
                         </Link>

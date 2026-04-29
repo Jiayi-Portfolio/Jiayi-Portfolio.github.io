@@ -1,106 +1,30 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { type Locale } from "@/lib/i18n"
+import {
+  featuredProjects,
+  localize,
+  type LocalizedProject,
+} from "@/lib/projects"
 
-interface Project {
-  id: string
-  title: string
-  description: string
-  image: string
-  year: string
-  tags: string[]
-  href: string
-}
-
-const projects: Project[] = [
-  {
-    id: "0",
-    title: "Babel Reconstruction",
-    description:
-    "An interactive art installation inspired by the Tower of Babel, featuring AI-generated imagery integrated into a dynamic and collaborative digital tower-building experience.",
-    image: "/projects/babel/cover.png",
-    year: "2024",
-    tags: ["Unity", "GenAI", "ComfyUI", "Shader"],
-    href: "/babel-reconstruction",
-  },
-  {
-    id: "1",
-    title: "Symbiotic Voxel",
-    description:
-      "Master's graduation project: A multimodal AI agent capable of spatial reasoning and co-creation within a 3D sandbox environment.",
-    image: "/projects/symbiotic-voxel/cover.png",
-    year: "2025",
-    tags: ["Unity","GenAI","Python","Game","HCI"],
-    href: "/symbiotic-voxel",
-  },
-  {
-    id: "2",
-    title: "LEGO® SMART Play™",
-    description:
-      "As part of the Creative Play Lab, I prototyped novel gameplay mechanics for the LEGO SMART Brick - a new way to play with LEGO bricks.",
-    image: "/projects/others/smartplay_cover.jpg",
-    year: "2024",
-    tags: ["Toy","HCI","Custom Sensors","Unity","Python"],
-    href: "/lego-smart-play",
-  },
-  {
-    id: "3",
-    title: "BEING",
-    description:
-      "An embodied VR game that simulates invertebrate sensory experiences, exploring evolution and survival in a rogue-lite environment.",
-    image: "/projects/being-cover.png",
-    year: "2022",
-    tags: ["Arduino", "VR", "Unity", "Wearable Devices", "Game"],
-    href: "/being"
-  },
-  {
-    id: "4",
-    title: "Cosmic Resonator",
-    description:
-      "An embodied physical computing game inspired by the Himalayan singing bowl, combining rhythm-based gameplay with Arduino-driven xylophone interaction.",
-    image: "/projects/cosmic-resonator-cover.jpg",
-    year: "2023",
-    tags: ["Unity", "Arduino", "Physical Interaction", "Custom Sensors"],
-    href: "/cosmic-resonator",
-  },
-  {
-    id: "5",
-    title: "Stellar Surfer",
-    description:
-      "An embodied balance-based game using a custom-built board and Unity, where players control a spaceship by shifting their weight to navigate through a space tunnel.",
-    image: "/projects/stellar-surfer/cover.png",
-    year: "2024",
-    tags: ["Unity", "Arduino", "Embodied Interaction"],
-    href: "/stellar-surfer",
-  },
-  {
-    id: "6",
-    title: "Moon Rover 2035",
-    description: "A realistic lunar driving simulator designed as an educational game to immerse players in lunar exploration and aerospace science.",
-    image: "/projects/moon-rover/cover.jpg",
-    year: "2021",
-    tags: ["Unity", "AAA", "PBR Workflow", "Motion Controls"],
-    href: "/moon-rover"
-  },
-]
-
-const ProjectOverlay = ({ project }: { project: Project }) => {
+const ProjectOverlay = ({ project }: { project: LocalizedProject }) => {
   return (
-    <div className="w-full py-6 px-8">
+    <div className="absolute bottom-0 left-0 right-0 px-6 md:px-14 pb-6">
       <div className="space-y-1 w-full">
         <p className="font-mono text-sm">
           <span className="text-accent bg-primary px-1 py-0.5">{project.title}</span>
         </p>
         <p className="text-xs max-w-[90%] hidden md:block">
-          <span className="text-neutral-300 bg-primary px-1 py-0.5">{project.description}</span>
+          <span className="text-neutral-300 bg-primary px-1 py-0.5">
+            {project.description}
+          </span>
         </p>
         <div className="flex flex-wrap gap-2">
-          {project.tags.map((tag, index) => (
+          {project.tags.map((tag, i) => (
             <span
-              key={index}
+              key={i}
               className="text-[10px] px-2 py-1 bg-primary rounded-full text-neutral-300"
             >
               {tag}
@@ -112,66 +36,23 @@ const ProjectOverlay = ({ project }: { project: Project }) => {
   )
 }
 
-export function ProjectCarousel() {
-  // Start with the second image (index 1)
-  const [currentProject, setCurrentProject] = useState(1)
-  const [width, setWidth] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
-  const carouselRef = useRef<HTMLDivElement>(null)
+export function ProjectCarousel({ locale = "en" }: { locale?: Locale }) {
+  const projects: LocalizedProject[] = featuredProjects
+    .filter((p) => p.inCarousel)
+    .map((p) => localize(p, locale))
 
-  useEffect(() => {
-    const updateWidth = () => {
-      if (carouselRef.current) {
-        setWidth(carouselRef.current.offsetWidth)
-      }
-    }
-    updateWidth()
-    window.addEventListener("resize", updateWidth)
-    return () => window.removeEventListener("resize", updateWidth)
-  }, [])
-
-  // Auto-rotation effect
-  useEffect(() => {
-    if (!isPaused) {
-      const timer = setInterval(() => {
-        setCurrentProject((prev) => (prev + 1) % projects.length)
-      }, 2000)
-      return () => clearInterval(timer)
-    }
-  }, [isPaused])
-
-  const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % projects.length)
-    setIsPaused(true) // Pause auto-rotation when manually navigating
-  }
-
-  const prevProject = () => {
-    setCurrentProject((prev) => (prev - 1 + projects.length) % projects.length)
-    setIsPaused(true) // Pause auto-rotation when manually navigating
-  }
-
-  // Main slide takes 60% of container width; we center it using offset.
-  const slideWidth = width * 0.65
-  const offset = (width - slideWidth) / 2
+  // Two copies for seamless -50% loop.
+  const slides = [...projects, ...projects]
 
   return (
-    <div
-      ref={carouselRef}
-      className="relative w-full max-w-7x1 overflow-hidden h-[60vh] md:h-[65vh]"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      <div
-        className="flex transition-transform duration-500 h-full"
-        style={{
-          transform: `translateX(${offset - currentProject * slideWidth}px)`,
-        }}
-      >
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="flex-shrink-0 px-6 md:px-14"
-            style={{ width: slideWidth }}
+    <div className="group/strip relative w-full overflow-hidden h-[60vh] md:h-[65vh]">
+      <div className="flex h-full w-fit animate-carousel-scroll group-hover/strip:[animation-play-state:paused]">
+        {slides.map((project, i) => (
+          <Link
+            key={i}
+            href={project.href}
+            aria-label={project.title}
+            className="group/slide relative flex-shrink-0 block h-full w-[80vw] md:w-[55vw] px-6 md:px-14"
           >
             <div className="relative h-full w-full">
               <Image
@@ -179,41 +60,17 @@ export function ProjectCarousel() {
                 alt={project.title}
                 fill
                 className="object-cover"
-                priority
+                priority={i < 2}
                 unoptimized
               />
+              <div className="absolute inset-0 bg-black/0 group-hover/slide:bg-black/30 transition-colors duration-300">
+                <div className="opacity-0 group-hover/slide:opacity-100 transition-opacity duration-300 h-full">
+                  <ProjectOverlay project={project} />
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
-      </div>
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevProject}
-        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 bg-black/0 p-2 rounded-full hover:bg-black/70 transition-colors"
-        aria-label="Previous project"
-      >
-        <ChevronLeft className="w-6 md:w-8 h-6 md:h-8 text-white" />
-      </button>
-      <button
-        onClick={nextProject}
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 bg-black/0 p-2 rounded-full hover:bg-black/70 transition-colors"
-        aria-label="Next project"
-      >
-        <ChevronRight className="w-6 md:w-8 h-6 md:h-8 text-white" />
-      </button>
-
-      {/* Overlay with Project Info matching the image width */}
-      <div className="absolute inset-0 left-1/2 -translate-x-1/2 px-6 md:px-14"
-        style={{ width: slideWidth }}>
-        <Link
-          href={projects[currentProject].href}
-          className="block w-full h-full"
-        >
-          <div className="flex items-end w-full h-full bg-black/0 hover:bg-black/20 duration-300">
-            <ProjectOverlay project={projects[currentProject]} />
-          </div>
-        </Link>
       </div>
     </div>
   )

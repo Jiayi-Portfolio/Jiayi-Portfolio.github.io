@@ -1,9 +1,10 @@
-import { Nav } from "@/components/nav";
+﻿import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import ProjectPage from "@/components/project-page";
+import type { Metadata } from "next";
 
 const projectData = {
-  title: "LEGO® SMART Play™",
+  title: "LEGOÂ® SMART Playâ„¢",
   subtitle: "Defining the Future of Screen-Free Interactive Play",
   description: `As an interactive play design intern of the LEGO Design and the Creative Play Lab, I prototyped novel gameplay mechanics for the LEGO SMART Brick - a new way to play with LEGO bricks.
   My role was to look past the hardware specifications and discover the "soul" of the machine, creating the first generation of gameplay experiences that bridge the physical and digital worlds without a screen.
@@ -19,12 +20,17 @@ const projectData = {
   ]
 };
 
+export const metadata: Metadata = {
+  title: projectData.title,
+  description: projectData.subtitle,
+};
+
 export default function SingleProjectPage() {
   return (
     <>
       <Nav alwaysLight />
       <ProjectPage projectData={projectData} />
-      <Footer />
+      <Footer color="primary" />
     </>
   );
 }
