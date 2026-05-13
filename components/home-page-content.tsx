@@ -25,7 +25,7 @@ export function HomePageContent({ locale = "en" }: { locale?: Locale }) {
         <Nav locale={locale} />
       </div>
 
-      <div className="relative flex flex-col h-screen pt-14 pb-10">
+      <div className="relative flex flex-col h-screen pt-14 pb-28 md:pb-10">
         <div className="flex-none w-full">
           <HeroScene locale={locale} line="headline" />
         </div>
