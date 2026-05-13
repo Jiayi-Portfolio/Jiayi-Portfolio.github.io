@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d out -f"
+    "start": "next start"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -27,7 +25,6 @@
     "@types/react": "^18",
     "eslint": "^9",
     "eslint-config-next": "^16.2.6",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
