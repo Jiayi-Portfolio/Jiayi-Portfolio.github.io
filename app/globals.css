@@ -113,8 +113,61 @@ html {
   100% { transform: translateX(-50%); }
 }
 .animate-carousel-scroll {
-  animation: carousel-scroll 60s linear infinite;
+  animation: carousel-scroll 40s linear infinite;
   will-change: transform;
+}
+
+/* Outlined range slider used for the carousel speed control. Both track
+   and thumb are transparent line frames in the accent color to match the
+   "More Works" circled-arrow aesthetic. Thumb fills on hover/focus. */
+.speed-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  outline: none;
+}
+.speed-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: transparent;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+  border-radius: 9999px;
+}
+.speed-slider::-moz-range-track {
+  height: 2px;
+  background: transparent;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+  border-radius: 9999px;
+}
+.speed-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  border: none;
+  margin-top: -6px;
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+.speed-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+.speed-slider:hover::-webkit-slider-thumb,
+.speed-slider:focus-visible::-webkit-slider-thumb {
+  transform: scale(1.15);
+}
+.speed-slider:hover::-moz-range-thumb,
+.speed-slider:focus-visible::-moz-range-thumb {
+  transform: scale(1.15);
 }
 
 
