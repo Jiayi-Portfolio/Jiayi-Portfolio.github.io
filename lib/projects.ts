@@ -35,6 +35,23 @@ export interface LocalizedSimpleProject extends Omit<LocalizedProject, "href"> {
 
 export const featuredProjects: BilingualProject[] = [
   {
+    id: "thing-under-glass",
+    href: "/thing-under-glass",
+    image: "/projects/thing-under-glass/cover.png",
+    year: "2026",
+    categories: ["game", "ai", "technical"],
+    title: { en: "Thing Under Glass", zh: "缸中生物" },
+    description: {
+      en: "Cozy vivarium made at Supercell AI Lab: what you feed shapes the creature's body, the words you teach shape its voice. No combat, no win condition — just a slow bond with something a bit weird.",
+      zh: "在 Supercell AI Lab 做的养成游戏:你喂它什么,它就长成什么;你教它什么词,它就那么说话。没有战斗、没有通关 —— 只有一段慢慢长出来的羁绊。",
+    },
+    tags: {
+      en: ["Unity", "GenAI", "Python", "Solo", "Game"],
+      zh: ["Unity", "生成式 AI", "Python", "独立开发", "游戏"],
+    },
+    inCarousel: true,
+  },
+  {
     id: "symbiotic-voxel",
     href: "/symbiotic-voxel",
     image: "/projects/symbiotic-voxel/cover.png",
